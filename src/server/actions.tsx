@@ -3,21 +3,6 @@
 import connectDB from "../../lib/mongoConnect";
 import Proposal from "../../model/Proposal";
 import { ProposalType } from "../schema/schema";
-export async function getAllProposals(): Promise<ProposalType[]> {
-    await connectDB();
-    try {
-        const data = await Proposal.find();
-        return data
-            .map((item) => ({
-                ...item.toObject(),
-                _id: item._id.toString(),
-            }))
-            .reverse();
-    } catch (error) {
-        console.error("Error fetching proposals:", error);
-        throw new Error("Failed to fetch proposals.");
-    }
-}
 
 export async function getAllProposals(): Promise<ProposalType[]> {
     try {

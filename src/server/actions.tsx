@@ -1,8 +1,11 @@
+
 "use server";
 
 import connectDB from "../../lib/mongoConnect";
 import Proposal from "../../model/Proposal";
 import { ProposalType } from "../schema/schema";
+
+await connectDB();
 
 export async function getAllProposals(): Promise<ProposalType[]> {
     try {
@@ -20,7 +23,6 @@ export async function getAllProposals(): Promise<ProposalType[]> {
 }
 
 export async function addProposal(data: ProposalType): Promise<ProposalType> {
-    await connectDB();
     try {
         const newProposal = new Proposal(data);
         const savedProposal = await newProposal.save();
@@ -35,9 +37,7 @@ export async function addProposal(data: ProposalType): Promise<ProposalType> {
 }
 
 
-
 export async function deleteProposalById(id: string): Promise<void> {
-    await connectDB();
     try {
         await Proposal.findByIdAndDelete(id);
     } catch (error) {
@@ -47,13 +47,11 @@ export async function deleteProposalById(id: string): Promise<void> {
 }
 
 
-
 export async function updateData(data: ProposalType): Promise<void> {
-    await connectDB();
     try {
         await Proposal.findByIdAndUpdate(data._id, data);
     } catch (error) {
         console.error("Error updating proposal:", error);
         throw new Error("Failed to update proposal.");
     }
-}
+} 

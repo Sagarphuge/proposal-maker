@@ -1,12 +1,8 @@
-
 "use server";
-
 import connectDB from "../../lib/mongoConnect";
 import Proposal from "../../model/Proposal";
 import { ProposalType } from "../schema/schema";
-
 await connectDB();
-
 export async function getAllProposals(): Promise<ProposalType[]> {
     try {
         const data = await Proposal.find();

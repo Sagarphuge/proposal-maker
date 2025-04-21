@@ -25,27 +25,27 @@ const PdfPage1 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
         <div className="grid grid-cols-12 gap-8 gap-y-20 bg-slate-200 p-16 ps-24">
           <div className="col-span-12">
             <p className="text-2xl">Prepared for</p>
-            <p className="text-5xl -mt-3 font-bold">{formInputs.companyName}</p>
+            <p className="text-5xl -mt-2 font-bold">{formInputs.companyName}</p>
           </div>
           <div className="col-span-5">
             <p className="text-2xl">Presented by</p>
-            <p className="text-3xl -mt-3 font-semibold">INAIWAYS TECHNOLOGY</p>
+            <p className="text-3xl -mt-2 font-semibold">INAIWAYS TECHNOLOGY</p>
           </div>
           <div className="col-span-4">
             <p className="text-2xl">Date of proposal</p>
-            <p className="text-3xl -mt-3 font-semibold">
+            <p className="text-3xl -mt-2 font-semibold">
               {new Date(formInputs.proposalDate).toLocaleDateString('en-GB')}
             </p>
           </div>
           <div className="col-span-3">
             <p className="text-2xl">Valid up to</p>
-            <p className="text-3xl -mt-3 font-semibold">
+            <p className="text-3xl -mt-2 font-semibold">
               {new Date(formInputs.validityDate).toLocaleDateString('en-GB')}
             </p>
           </div>
           <div className="col-span-12">
             <p className="text-2xl">sales@inaiways.com</p>
-            <p className="text-3xl -mt-3 font-semibold">9272091304</p>
+            <p className="text-3xl -mt-2 font-semibold">9272091304</p>
           </div>
         </div>
       </div>

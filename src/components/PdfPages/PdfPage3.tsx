@@ -64,7 +64,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                     </div>
                     {
                         formInputs.proposalType === "LeadGenX" ?
-                            <div className="mb-16 grid gap-2">
+                            <div className="mb-16 grid gap-4">
                                 <div className="flex items-center gap-4">
                                     <div>
                                         <svg
@@ -88,7 +88,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div className="-mt-2">
                                         <p>Target : <span className="capitalize"> {formInputs.audiencePersona} </span></p>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Products to be marketed : <span className="capitalize"> {formInputs.products} </span></p>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Location : <span className="capitalize">{formInputs.location} </span> </p>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Website : <span className=""> {formInputs.website} </span></p>
                                     </div>
                                 </div>
@@ -191,11 +191,11 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Status of Google Ads : <span className="capitalize"> {formInputs.googleAdsStatus} </span></p>
                                     </div>
                                 </div>
-                            </div> : formInputs.proposalType === "AdGenX" ? <div className="mb-16 grid gap-2">
+                            </div> : formInputs.proposalType === "AdGenX" ? <div className="mb-16 grid gap-4">
                                 <div className="flex items-center gap-4">
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="40" height="40" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -207,7 +207,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Website : <span className=""> {formInputs.website} </span></p>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Location : <span className="capitalize">{formInputs.location} </span></p>
                                     </div>
                                 </div>
@@ -233,7 +233,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Product / Service to be marketed : <span className="capitalize"> {formInputs.products} </span>
                                         </p>
                                     </div>
@@ -254,7 +254,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div  className="-mt-2">
                                         <p>Status of Google Ads : <span className="capitalize"> {formInputs.googleAdsStatus} </span></p>
                                     </div>
                                 </div>
@@ -286,11 +286,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                     </div>
                 </div>
             </div>
-            {/* {
-                formInputs.proposalType === "AdGenX" && <div className="absolute bottom-0 left-0 w-full h-auto">
-                    <img className="w-full h-full" src="https://acdn.inaiways.com/filters:format(webp)/filters:quality(100)/filters:proportion(1)/www.inaiways.com/adgenx-img.png" />
-                </div>
-            } */}
+     
 
         </div >
     );

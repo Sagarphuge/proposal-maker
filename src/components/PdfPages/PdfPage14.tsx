@@ -19,13 +19,13 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                 </div>
                 <div className="mb-4 grid grid-cols-12">
                     <div className="col-span-2 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white">
-                        <p className="-mt-2">LEVEL</p>
+                        <p className="-mt-5">LEVEL</p>
                     </div>
                     <div className="col-span-4 grid h-20 place-content-center border-x bg-neutral-900 text-lg font-semibold text-white">
-                        <p className="-mt-2">SPOC DETAILS</p>
+                        <p className="-mt-5">SPOC DETAILS</p>
                     </div>
                     <div className="col-span-6 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white">
-                        <p className="-mt-2">PROCEDURE</p>
+                        <p className="-mt-5">PROCEDURE</p>
                     </div>
                     <div className="col-span-2 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-5 uppercase">
                         <div>

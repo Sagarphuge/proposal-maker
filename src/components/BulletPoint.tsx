@@ -1,5 +1,5 @@
 const Bullet = () => {
-    return <div className="mt-5 text-neutral-900">
+    return <div className="text-neutral-800">
         <svg
             id="iesypu"
             xmlns="http://www.w3.org/2000/svg"

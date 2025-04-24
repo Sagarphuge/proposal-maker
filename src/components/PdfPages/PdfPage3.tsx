@@ -267,7 +267,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                         </div>
                     }
 
-                    <div className="mt-8 grid">
+                    <div className="mt-8 grid gap-2">
                         {proposalTypeText && <p className="mb-6">{proposalTypeText}</p>}
                         <p>
                             1. Keyword hunting by understanding product’s requirement and

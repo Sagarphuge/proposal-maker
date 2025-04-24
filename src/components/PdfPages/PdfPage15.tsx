@@ -20,7 +20,7 @@ const PdfPage15 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         </div>
                     </div>
                 </div>
-                <div className="flex h-60 w-full flex-col justify-between bg-slate-200 p-10 ps-20">
+                <div className="flex h-80 w-full flex-col justify-between bg-slate-200 p-10  pb-28 ps-24">
                     <p className="text-xl font-semibold">WWW.INAIWAYS.COM</p>
                     <p className="text-end text-lg">Version v101912124</p>
                 </div>

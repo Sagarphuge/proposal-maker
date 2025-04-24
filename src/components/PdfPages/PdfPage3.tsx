@@ -88,7 +88,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div className="-mt-2">
+                                    <div className="-mt-6">
                                         <p>Target : <span className="capitalize"> {formInputs.audiencePersona} </span></p>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Products to be marketed : <span className="capitalize"> {formInputs.products} </span></p>
                                     </div>
                                 </div>
@@ -135,7 +135,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Location : <span className="capitalize">{formInputs.location} </span> </p>
                                     </div>
                                 </div>
@@ -161,7 +161,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Website : <span className=""> {formInputs.website} </span></p>
                                     </div>
                                 </div>
@@ -191,7 +191,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Status of Google Ads : <span className="capitalize"> {formInputs.googleAdsStatus} </span></p>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Website : <span className=""> {formInputs.website} </span></p>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Location : <span className="capitalize">{formInputs.location} </span></p>
                                     </div>
                                 </div>
@@ -233,7 +233,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Product / Service to be marketed : <span className="capitalize"> {formInputs.products} </span>
                                         </p>
                                     </div>
@@ -254,7 +254,7 @@ const PdfPage3 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                             </g>
                                         </svg>
                                     </div>
-                                    <div  className="-mt-2">
+                                    <div  className="-mt-6">
                                         <p>Status of Google Ads : <span className="capitalize"> {formInputs.googleAdsStatus} </span></p>
                                     </div>
                                 </div>

@@ -19,13 +19,13 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                 </div>
                 <div className="mb-4 grid grid-cols-12">
                     <div className="col-span-2 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white">
-                        <p>LEVEL</p>
+                        <p className="-mt-2">LEVEL</p>
                     </div>
                     <div className="col-span-4 grid h-20 place-content-center border-x bg-neutral-900 text-lg font-semibold text-white">
-                        <p>SPOC DETAILS</p>
+                        <p className="-mt-2">SPOC DETAILS</p>
                     </div>
                     <div className="col-span-6 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white">
-                        <p>Procedure</p>
+                        <p className="-mt-2">PROCEDURE</p>
                     </div>
                     <div className="col-span-2 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-5 uppercase">
                         <div>
@@ -45,7 +45,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9272091303</p>
                         </div>
                     </div>
-                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5">
+                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5 pb-12">
                         <p>
                             1. In case of any issues or concerns regarding the current
                             status, issue or concern the first point of contact is the
@@ -80,7 +80,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9860282807</p>
                         </div>
                     </div>
-                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5">
+                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5 pb-12">
                         <p>
                             1. If the issue remains unresolved or if there is
                             dissatisfaction with the response at Level 1, the escalation
@@ -114,7 +114,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9579074365</p>
                         </div>
                     </div>
-                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5">
+                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5 pb-12">
                         <p>
                             1. If the issue persists despite escalations at Levels 1 and 2,
                             or if there is dissatisfaction with the responses received, the

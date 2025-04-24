@@ -28,19 +28,19 @@ const PdfPage8 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                     </div>
                     <div className="grid grid-cols-12">
                         <div className="col-span-1 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
-                            <p>
+                            <p className="-mt-2">
                                 SR. <br />
                                 NO
                             </p>
                         </div>
                         <div className="col-span-3 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
-                            <p>Particulars</p>
+                            <p className="-mt-2" >Particulars</p>
                         </div>
                         <div className="col-span-4 grid h-20 place-content-center border-x border-y border-gray-400 text-lg font-semibold uppercase">
-                            <p>Before AI-Portal</p>
+                            <p className="-mt-2">Before AI-Portal</p>
                         </div>
                         <div className="border-eborder-gray-400 col-span-4 grid h-20 place-content-center border-y border-e border-gray-400 text-lg font-semibold uppercase">
-                            <p>After AI-Portal</p>
+                            <p className="-mt-2">After AI-Portal</p>
                         </div>
                         {formInputs.proposalType !== "AdGenX" && <>
                             <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">

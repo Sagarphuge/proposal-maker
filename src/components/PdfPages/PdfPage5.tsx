@@ -30,16 +30,16 @@ const PdfPage5 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                         (formInputs.proposalType === "LeadGenX" || formInputs.proposalType === "AdGenX") &&
                         <div className="grid grid-cols-12">
                             <div className="col-span-1 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
-                                <p>
+                                <p className="-mt-2">
                                     SR. <br />
                                     NO
                                 </p>
                             </div>
                             <div className="col-span-5 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
-                                <p>Particulars</p>
+                                <p className="-mt-2">Particulars</p>
                             </div>
                             <div className="col-span-3 grid h-20 place-content-center border-x border-y border-gray-400 text-center text-lg font-semibold uppercase">
-                                <p>
+                                <p className="-mt-2">
                                     ESSENTIALS <br />
                                     <span className="font-normal capitalize">{
                                         formInputs.proposalType === "LeadGenX" && "(without taxes)"
@@ -47,7 +47,7 @@ const PdfPage5 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 </p>
                             </div>
                             <div className="col-span-3 grid h-20 place-content-center border-y border-e border-gray-400 text-center text-lg font-semibold uppercase">
-                                <p>
+                                <p className="-mt-2">
                                     BUSINESS-PRO <br />
                                     <span className="font-normal capitalize">{
                                         formInputs.proposalType === "LeadGenX" && "(without taxes)"

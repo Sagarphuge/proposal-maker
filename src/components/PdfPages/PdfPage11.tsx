@@ -27,49 +27,49 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </div>
                             <div className="grid grid-cols-12 gap-5">
                                 <div className="col-span-3 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white  ">
-                                    <p>Phase</p>
+                                    <p className="-mt-5">Phase</p>
                                 </div>
                                 <div className="col-span-3 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white  ">
-                                    <p>Days</p>
+                                    <p className="-mt-5">Days</p>
                                 </div>
                                 <div className="col-span-6 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white  ">
-                                    <p>Description</p>
+                                    <p className="-mt-5">Description</p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold">Start</p>
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold  ">Pre</p>
                                     </div>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
-                                    <p>
+                                    <p className="-mt-5">
                                         Date of receipt of 1st payment or Written Purchase Order from
                                         the client, whichever is applicable as per commercial section
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="text-center font-bold">On-boarding</p>
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold  ">Pre</p>
                                     </div>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
-                                    <p>
+                                    <p className="-mt-5">
                                         Meeting of client’s team with the Inaiways delivery team to
                                         discuss detailed requirements needed to setup AI from the client
                                         and derive AI researched output.
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="text-center font-bold">
                                             Reviewing AI’s <br />
                                             Output by Client
@@ -77,36 +77,36 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold  ">S</p>
                                     </div>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
-                                    <p>
+                                    <p className="-mt-5">
                                         Client should review and confirm the output shared by Inaiways
                                         team. Days will be calculated from this day. We call this day as
                                         “S”
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold">Launch</p>
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold  ">S+10</p>
                                     </div>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
-                                    <p>
+                                    <p className="-mt-5">
                                         We will provide the client with a link to the landing pages for
                                         review. The client should check for any inaccuracies in the
                                         content but avoid suggesting aesthetic / UI changes.
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="text-center font-bold">
                                             AI - Market <br />
                                             Realignment
@@ -114,12 +114,12 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
-                                    <div>
+                                    <div className="-mt-5">
                                         <p className="font-bold  ">As per need</p>
                                     </div>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
-                                    <p>
+                                    <p className="-mt-5">
                                         We will retune the Ads & targeting, whenever you feel the
                                         outcome is not as desired.
                                     </p>

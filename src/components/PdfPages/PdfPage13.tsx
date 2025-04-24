@@ -27,21 +27,25 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                     <div className="mt-10 grid gap-1">
                         <p className="text-xl font-bold">Commercial Terms :</p>
                         <div className="flex gap-3">
-                            <Bullet />
+                            <div className="mt-5">
+                                <Bullet />
+                            </div>
                             <div id="i8id6r" className="">
                                 All applicable payments are to be paid 100% in advance as per
                                 the plan availed.
                             </div>
                         </div>
                         <div className="flex gap-3">
-                            <Bullet />
+                            <div className="mt-5">
+                                <Bullet />
+                            </div>
                             <div id="i8id6r" className="">
                                 All charges are subject to additional GST or any other taxes
                                 as applicable under the government norms.
                             </div>
                         </div>
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div id="i8id6r" className="">
@@ -53,7 +57,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </div>
                         </div>
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div id="i8id6r" className="">
@@ -66,7 +70,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </div>
                         </div>
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div id="i8id6r" className="">
@@ -74,7 +78,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </div>
                         </div>
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div id="i8id6r" className="">
@@ -83,7 +87,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </div>
                         </div>
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div>
@@ -100,7 +104,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 "Refer to https://www.inaiways.com/v/terms-conditions-leadgenx-with-lp for more details."
                             ].map((text, index) => (
                                 <div key={index} className="flex gap-3">
-                                    <div>
+                                    <div className="mt-5">
                                         <Bullet />
                                     </div>
                                     <div>{text}</div>
@@ -109,7 +113,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                         {formInputs.proposalType === "AdGenX" && (
                             <div className="flex gap-3">
-                                <div>
+                                <div className="mt-5">
                                     <Bullet />
                                 </div>
                                 <div>
@@ -124,7 +128,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 "For more details refer to https://www.inaiways.com/v/terms-conditions-direct-promoters."
                             ].map((text, index) => (
                                 <div key={index} className="flex gap-3">
-                                    <div>
+                                    <div className="mt-5">
                                         <Bullet />
                                     </div>
                                     <div>{text}</div>
@@ -137,7 +141,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 "Refer to https://www.inaiways.com/v/terms-conditions-enterprises for more details."
                             ].map((text, index) => (
                                 <div key={index} className="flex gap-3">
-                                    <div>
+                                    <div className="mt-5">
                                         <Bullet />
                                     </div>
                                     <div>{text}</div>
@@ -150,7 +154,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         </p>
 
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div>
@@ -160,7 +164,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                         {formInputs.proposalType === "LeadGenX" && (
                             <div className="flex gap-3">
-                                <div>
+                                <div className="mt-5">
                                     <Bullet />
                                 </div>
                                 <div>
@@ -174,7 +178,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                         {formInputs.proposalType === "AdGenX" && (
                             <div className="flex gap-3">
-                                <div>
+                                <div className="mt-5">
                                     <Bullet />
                                 </div>
                                 <div>
@@ -187,7 +191,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                         {formInputs.proposalType === "LeadTitanX" && (
                             <div className="flex gap-3">
-                                <div>
+                                <div className="mt-5">
                                     <Bullet />
                                 </div>
                                 <div>
@@ -201,7 +205,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                         {(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") && (
                             <div className="flex gap-3">
-                                <div>
+                                <div className="mt-5">
                                     <Bullet />
                                 </div>
                                 <div>
@@ -217,7 +221,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         <p className="text-xl font-bold">Delivery & support limits :</p>
 
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div>
@@ -227,7 +231,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                         {formInputs.proposalType && (
                             <div className="flex gap-3">
-                                <div>
+                                <div className="mt-5">
                                     <Bullet />
                                 </div>
                                 <div>
@@ -281,7 +285,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         {(formInputs.proposalType === "HealthGenX" || formInputs.proposalType === "PropGenX") && (
                             <>
                                 <div className="flex gap-3">
-                                    <div>
+                                    <div className="mt-5">
                                         <Bullet />
                                     </div>
                                     <div>
@@ -289,7 +293,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                     </div>
                                 </div>
                                 <div className="flex gap-3">
-                                    <div>
+                                    <div className="mt-5">
                                         <Bullet />
                                     </div>
                                     <div>
@@ -304,7 +308,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         <p className="text-xl font-bold">General Terms :</p>
 
                         <div className="flex gap-3">
-                            <div>
+                            <div className="mt-5">
                                 <Bullet />
                             </div>
                             <div>
@@ -325,7 +329,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                                 return url ? (
                                     <div className="flex gap-3">
-                                        <div>
+                                        <div className="mt-5">
                                             <Bullet />
                                         </div>
                                         <div>

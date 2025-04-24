@@ -45,14 +45,14 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 <p  className="-mt-5">
                                     ESSENTIALS
                                     <span className="font-normal  "> {
-                                        formInputs.proposalType === "LeadGenX" && "(without taxes)"}</span>
+                                        formInputs.proposalType === "LeadGenX" && "(Without Taxes)"}</span>
                                 </p>
                             </div>
                             <div className="col-span-4 grid h-20 place-content-center border-y border-e border-gray-400 text-lg font-semibold ">
                                 <p  className="-mt-5">
                                     BUSINESS-PRO
                                     <span className="font-normal  "> {
-                                        formInputs.proposalType === "LeadGenX" && "(without taxes)"}</span>
+                                        formInputs.proposalType === "LeadGenX" && "(Without Taxes)"}</span>
                                 </p>
                             </div>
 

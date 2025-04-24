@@ -129,32 +129,32 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <div className="grid gap-5 mb-20 mt-32">
                                 <div className="grid gap-5 grid-cols-12">
                                     <div className="col-span-3  text-2xl font-bold"> <p className="bg-gray-50 h-24  mt-6   grid place-content-center w-full"><span className="-mt-6">1</span></p></div>
-                                    <div className="col-span-9 p-6 bg-gray-50">
+                                    <div className="col-span-9 -mt-8 p-6 bg-gray-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Onboarding Meeting
                                         </p>
-                                        <p className="-mt-8">
+                                        <p  >
                                             Inaiways invites the client for an onboarding meeting within 2 working days. Since the “Context” of AI will be done, it is important to have a marketing decision-maker in this meeting.</p>
                                     </div>
                                 </div>
                                 <div className="grid gap-5 grid-cols-12">
                                     <div className="col-span-3  text-2xl font-bold"> <p className="bg-blue-50 h-24  mt-6     grid place-content-center w-full"> <span className="-mt-6">2</span></p></div>
-                                    <div className="col-span-9 p-6 bg-blue-50">
+                                    <div className="col-span-9 -mt-8 p-6 bg-blue-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Monitoring AI
                                         </p>
-                                        <p className="-mt-8">
+                                        <p  >
 
                                             During the Onboarding meeting, “Context” to target the AI will be set up and the outcome will be reviewed by the customer & confirmed for the final go ahead.</p>
                                     </div>
                                 </div>
                                 <div className="grid gap-5 grid-cols-12">
                                     <div className="col-span-3  text-2xl font-bold"> <p className="bg-green-50   h-24  mt-6  grid place-content-center w-full"><span className="-mt-6">3</span></p></div>
-                                    <div className="col-span-9 p-6 bg-green-50">
+                                    <div className="col-span-9 -mt-8 p-6 bg-green-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Review Outcome in 2 Days
                                         </p>
-                                        <p className="-mt-8">
+                                        <p  >
 
                                             The outcome will be shared for a deeper review from the client. The client should review and revert within 2 days.</p>
                                     </div>
@@ -165,11 +165,11 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                             <span className="-mt-6">4</span>
                                         </p>
                                     </div>
-                                    <div className="col-span-9 p-6 bg-gray-50">
+                                    <div className="col-span-9 -mt-8 p-6 bg-gray-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Delivery
                                         </p>
-                                        <p className="-mt-8">
+                                        <p  >
                                             Once the client reverts with the reviewed content, Inaiways will generate the Ads copies and will share it with the client within 1 working day (Refer to T&C).</p>
                                     </div>
                                 </div>

@@ -29,23 +29,23 @@ const PdfPage1 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
           </div>
           <div className="col-span-5">
             <p className="text-2xl">Presented by</p>
-            <p className="text-3xl  font-semibold">INAIWAYS TECHNOLOGY</p>
+            <p className="text-3xl mt-2 font-semibold">INAIWAYS TECHNOLOGY</p>
           </div>
           <div className="col-span-4">
             <p className="text-2xl">Date of proposal</p>
-            <p className="text-3xl  font-semibold">
+            <p className="text-3xl mt-2 font-semibold">
               {new Date(formInputs.proposalDate).toLocaleDateString('en-GB')}
             </p>
           </div>
           <div className="col-span-3">
             <p className="text-2xl">Valid up to</p>
-            <p className="text-3xl  font-semibold">
+            <p className="text-3xl mt-2 font-semibold">
               {new Date(formInputs.validityDate).toLocaleDateString('en-GB')}
             </p>
           </div>
           <div className="col-span-12">
             <p className="text-2xl">sales@inaiways.com</p>
-            <p className="text-3xl  font-semibold">9272091304</p>
+            <p className="text-3xl mt-2 font-semibold">9272091304</p>
           </div>
         </div>
       </div>

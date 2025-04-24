@@ -58,30 +58,40 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
     async function downloadHandler() {
         setIsDownloading(true);
         const pdf = new jsPDF();
+    
         for (let i = 0; i < pdfRefs.length; i++) {
             const element = pdfRefs[i].current;
             if (!element) continue;
-            const canvas = await html2canvas(element, { scale: 1 });
-            const imgData = canvas.toDataURL("image/png");
+    
+            const canvas = await html2canvas(element, { scale:2 });
+            
+            const imgData = canvas.toDataURL("image/jpeg", 0.8); 
+    
             const imgWidth = 210;
             const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    
             if (i !== 0) pdf.addPage();
-            pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
+            pdf.addImage(imgData, "JPEG", 0, 0, imgWidth, imgHeight);
         }
+    
         pdf.save(`${formInputs.companyName}.pdf`);
         setPreviewModal(false);
-
+    
         if (isFromTable) {
             setIsFromTable(false);
         }
+    
         if (!isFromTable) {
             const newProposal = await addProposal(formInputs);
             setProposalsList([newProposal, ...proposalsList]);
         }
+    
         toast.success("PDF downloaded successfully");
         reset();
         setIsDownloading(false);
     }
+    
+    
     return (
         <>
             <div className="fixed inset-0 flex items-center justify-center bg-black/60">

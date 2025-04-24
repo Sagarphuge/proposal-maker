@@ -129,7 +129,7 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <div className="grid gap-5 mb-20 mt-32">
                                 <div className="grid gap-5 grid-cols-12">
                                     <div className="col-span-3  text-2xl font-bold"> <p className="bg-gray-50 h-24  mt-6   grid place-content-center w-full"><span className="-mt-6">1</span></p></div>
-                                    <div className="col-span-9  pt-0 p-6 pb-8 bg-gray-50">
+                                    <div className="col-span-9  pt-1 p-6 pb-8 bg-gray-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Onboarding Meeting
                                         </p>
@@ -139,7 +139,7 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div className="grid gap-5 grid-cols-12">
                                     <div className="col-span-3  text-2xl font-bold"> <p className="bg-blue-50 h-24  mt-6     grid place-content-center w-full"> <span className="-mt-6">2</span></p></div>
-                                    <div className="col-span-9  pt-0 p-6 pb-8 bg-blue-50">
+                                    <div className="col-span-9  pt-1 p-6 pb-8 bg-blue-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Monitoring AI
                                         </p>
@@ -150,7 +150,7 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div className="grid gap-5 grid-cols-12">
                                     <div className="col-span-3  text-2xl font-bold"> <p className="bg-green-50   h-24  mt-6  grid place-content-center w-full"><span className="-mt-6">3</span></p></div>
-                                    <div className="col-span-9  pt-0 p-6 pb-8 bg-green-50">
+                                    <div className="col-span-9  pt-1 p-6 pb-8 bg-green-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Review Outcome in 2 Days
                                         </p>
@@ -165,7 +165,7 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                             <span className="-mt-6">4</span>
                                         </p>
                                     </div>
-                                    <div className="col-span-9  pt-0 p-6 pb-8 bg-gray-50">
+                                    <div className="col-span-9  pt-1 p-6 pb-8 bg-gray-50">
                                         <p className=" text-2xl mb-2 font-bold">
                                             Delivery
                                         </p>

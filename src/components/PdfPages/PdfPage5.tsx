@@ -42,7 +42,7 @@ const PdfPage5 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 <p className="-mt-5">
                                     ESSENTIALS <br />
                                     <span className="font-normal capitalize">{
-                                        formInputs.proposalType === "LeadGenX" && "(without taxes)"
+                                        formInputs.proposalType === "LeadGenX" && "(Without Taxes)"
                                     }</span>
                                 </p>
                             </div>
@@ -176,7 +176,7 @@ const PdfPage5 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             <div className="col-span-4 grid h-20 place-content-center border-x border-y border-gray-400 text-center text-lg font-semibold uppercase">
                                 <p className='-mt-5'>
                                     AMOUNT
-                                    <span className="font-normal capitalize">(without taxes)</span>
+                                    <span className="font-normal capitalize">(Without Taxes)</span>
                                 </p>
                             </div>
                             <div className="col-span-2 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">

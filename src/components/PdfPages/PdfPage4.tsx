@@ -333,7 +333,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             </div>
                             <div className="col-span-5 grid h-20 place-content-center border-x border-y border-gray-400 text-lg font-semibold uppercase">
                                 <p className="-mt-5">
-                                    Amount <span className="font-normal lowercase "> (without taxes)</span>
+                                    Amount <span className="font-normal lowercase "> (Without Taxes)</span>
                                 </p>
                             </div>
                             <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">

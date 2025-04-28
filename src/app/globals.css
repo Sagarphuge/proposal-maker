@@ -69,5 +69,5 @@
 
 
 body {
-  font-family: var(--font-outfit);
+  font-family: var(--font-jakarta), sans-serif;
 }

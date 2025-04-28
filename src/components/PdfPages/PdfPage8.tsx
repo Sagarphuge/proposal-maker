@@ -309,7 +309,7 @@ const PdfPage8 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 </span>
                                 <div id="i8id6r" className="">
                                     Few hours, as the iterations happen on product instead saving
-                                    your crucial Ad spends that would have wasted. in multiple
+                                    your crucial Ad spends that would have wasted in multiple
                                     iterations
                                 </div>
                             </div>

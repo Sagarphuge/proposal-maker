@@ -63,9 +63,9 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
             const element = pdfRefs[i].current;
             if (!element) continue;
     
-            const canvas = await html2canvas(element, { scale: 3 });
+            const canvas = await html2canvas(element, { scale: 2 });
             
-            const imgData = canvas.toDataURL("image/jpeg", 1); 
+            const imgData = canvas.toDataURL("image/jpeg", 0.8); 
     
             const imgWidth = 210;
             const imgHeight = (canvas.height * imgWidth) / canvas.width;

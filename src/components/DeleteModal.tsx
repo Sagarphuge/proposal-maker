@@ -14,10 +14,10 @@ const DeleteModal = () => {
             await deleteProposalById(deleteId);
             deleteProposal(deleteId);
             setDeleteModal(false);
-            toast.success('Proposal has been deleted successfully');
+            toast.success('Proposal has deleted successfully');
         } catch (error) {
             console.error('Error deleting proposal:', error);
-            toast.error('Failed to delete the proposal. Please try again.');
+            toast.error('Failed to delete the proposal.');
         } finally {
             setIsDeleting(false);
         }

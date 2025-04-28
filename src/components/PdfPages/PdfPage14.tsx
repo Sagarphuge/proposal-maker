@@ -45,7 +45,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9272091303</p>
                         </div>
                     </div>
-                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5 pb-12">
+                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-5 pb-12">
                         <p>
                             1. In case of any issues or concerns regarding the current
                             status, issue or concern the first point of contact is the
@@ -80,7 +80,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9860282807</p>
                         </div>
                     </div>
-                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5 pb-12">
+                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-5 pb-12">
                         <p>
                             1. If the issue remains unresolved or if there is
                             dissatisfaction with the response at Level 1, the escalation
@@ -114,7 +114,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9579074365</p>
                         </div>
                     </div>
-                    <div className="col-span-6 grid border-e border-b border-gray-400 p-5 pb-12">
+                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-5 pb-12">
                         <p>
                             1. If the issue persists despite escalations at Levels 1 and 2,
                             or if there is dissatisfaction with the responses received, the

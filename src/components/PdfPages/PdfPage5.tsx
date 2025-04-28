@@ -50,7 +50,7 @@ const PdfPage5 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 <p className="-mt-5">
                                     BUSINESS-PRO <br />
                                     <span className="font-normal capitalize">{
-                                        formInputs.proposalType === "LeadGenX" && "(without taxes)"
+                                        formInputs.proposalType === "LeadGenX" && "(Without Taxes)"
                                     }</span>
                                 </p>
                             </div>

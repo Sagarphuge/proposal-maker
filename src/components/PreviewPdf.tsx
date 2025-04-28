@@ -34,7 +34,7 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
             toast.success("Proposal added successfully");
         } catch (error) {
             console.error("Failed to add proposal:", error);
-            toast.error("Failed to add proposal. Please try again.");
+            toast.error("Failed to add proposal.");
         }
     }
     const pdfRefs = [

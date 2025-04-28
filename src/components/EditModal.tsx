@@ -37,9 +37,9 @@ const EditForm = () => {
             setProposalsList(proposalsList.map((proposal) => proposal._id === editId ? { ...updatedProposal } : proposal))
             setEditModal(false);
             await updateData(updatedProposal);
-            toast.success("Proposal details updated successfully.");;
+            toast.success("Proposal updated successfully.");;
         } catch (error) {
-            toast.error("Failed to update proposal. Try again.");
+            toast.error("Failed to update proposal.");
             console.error("Update Error:", error);
         } finally {
             setUpdateing(false);

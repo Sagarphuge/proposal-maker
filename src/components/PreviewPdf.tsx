@@ -21,6 +21,7 @@ import PdfPage12 from "../components/PdfPages/PdfPage12";
 import PdfPage13 from "../components/PdfPages/PdfPage13";
 import PdfPage14 from "../components/PdfPages/PdfPage14";
 import PdfPage15 from "../components/PdfPages/PdfPage15";
+import PdfPage16 from "../components/PdfPages/PdfPage16";
 
 const PreviewPDF = ({ reset }: { reset: () => void }) => {
     const { setPreviewModal, formInputs, setProposalsList, setIsFromTable, proposalsList, isFromTable } = useStore()
@@ -54,44 +55,45 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
         useRef(null),
         useRef(null),
         useRef(null),
+        useRef(null),
     ];
     async function downloadHandler() {
         setIsDownloading(true);
         const pdf = new jsPDF();
-    
+
         for (let i = 0; i < pdfRefs.length; i++) {
             const element = pdfRefs[i].current;
             if (!element) continue;
-    
+
             const canvas = await html2canvas(element, { scale: 2 });
-            
-            const imgData = canvas.toDataURL("image/jpeg", 0.8); 
-    
+
+            const imgData = canvas.toDataURL("image/jpeg", 0.8);
+
             const imgWidth = 210;
             const imgHeight = (canvas.height * imgWidth) / canvas.width;
-    
+
             if (i !== 0) pdf.addPage();
             pdf.addImage(imgData, "JPEG", 0, 0, imgWidth, imgHeight);
         }
-    
+
         pdf.save(`${formInputs.companyName}.pdf`);
         setPreviewModal(false);
-    
+
         if (isFromTable) {
             setIsFromTable(false);
         }
-    
+
         if (!isFromTable) {
             const newProposal = await addProposal(formInputs);
             setProposalsList([newProposal, ...proposalsList]);
         }
-    
+
         toast.success("PDF downloaded successfully");
         reset();
         setIsDownloading(false);
     }
-    
-    
+
+
     return (
         <>
             <div className="fixed inset-0 flex items-center justify-center bg-black/60">
@@ -139,6 +141,7 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
                         <PdfPage11 formInputs={formInputs} ref={pdfRefs[10]} />
                         <PdfPage12 formInputs={formInputs} ref={pdfRefs[11]} />
                         <PdfPage13 formInputs={formInputs} ref={pdfRefs[12]} />
+                        <PdfPage16 formInputs={formInputs} ref={pdfRefs[15]} />
                         {
                             formInputs.proposalType !== "AdGenX" &&
                             <PdfPage14 formInputs={formInputs} ref={pdfRefs[13]} />

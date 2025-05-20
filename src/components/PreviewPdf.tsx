@@ -141,12 +141,12 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
                         <PdfPage11 formInputs={formInputs} ref={pdfRefs[10]} />
                         <PdfPage12 formInputs={formInputs} ref={pdfRefs[11]} />
                         <PdfPage13 formInputs={formInputs} ref={pdfRefs[12]} />
-                        <PdfPage16 formInputs={formInputs} ref={pdfRefs[15]} />
+                        <PdfPage16 formInputs={formInputs} ref={pdfRefs[13]} />
                         {
                             formInputs.proposalType !== "AdGenX" &&
-                            <PdfPage14 formInputs={formInputs} ref={pdfRefs[13]} />
+                            <PdfPage14 formInputs={formInputs} ref={pdfRefs[14]} />
                         }
-                        <PdfPage15 formInputs={formInputs} ref={pdfRefs[14]} />
+                        <PdfPage15 formInputs={formInputs} ref={pdfRefs[15]} />
                     </div>
 
                     <div className="p-4 flex items-center gap-2.5 justify-between">

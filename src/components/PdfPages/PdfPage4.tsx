@@ -18,7 +18,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                         <p className="text-3xl ">
                             AI-Powered Lead Generation Plans
                         </p>
-                        <p className="text-7xl font-black">Investment</p>
+                        <p className="text-7xl font-black">{formInputs.proposalType === "PropGenX" ? "Commercials" : "Investment"}</p>
                     </div>
 
 
@@ -33,23 +33,23 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                         (formInputs.proposalType === "LeadGenX" || formInputs.proposalType === "AdGenX") &&
                         <div className="grid grid-cols-12">
                             <div className="col-span-1 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
-                                <p  className="-mt-5">
+                                <p className="-mt-5">
                                     SR. <br />
                                     NO
                                 </p>
                             </div>
                             <div className="col-span-3 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
-                                <p  className="-mt-5">Particulars</p>
+                                <p className="-mt-5">Particulars</p>
                             </div>
                             <div className="col-span-4 grid h-20 place-content-center border-x border-y border-gray-400 text-lg font-semibold ">
-                                <p  className="-mt-5">
+                                <p className="-mt-5">
                                     ESSENTIALS
                                     <span className="font-normal  "> {
                                         formInputs.proposalType === "LeadGenX" && "(Without Taxes)"}</span>
                                 </p>
                             </div>
                             <div className="col-span-4 grid h-20 place-content-center border-y border-e border-gray-400 text-lg font-semibold ">
-                                <p  className="-mt-5">
+                                <p className="-mt-5">
                                     BUSINESS-PRO
                                     <span className="font-normal  "> {
                                         formInputs.proposalType === "LeadGenX" && "(Without Taxes)"}</span>
@@ -195,10 +195,10 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         </div>
                                                     </div>
                                                     <div id="i8id6r" className="text-center">
-                                                        [24DC109]
+                                                        [25DC109]
                                                     </div></> : <>
                                                     <p className="text-center">Upto 100 good  intent keywords </p>
-                                                    <p className="text-center">[24DC101]</p>
+                                                    <p className="text-center">[25DC101]</p>
                                                 </>
                                         }
 
@@ -250,10 +250,10 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         </div>
                                                     </div>
                                                     <div id="i8id6r" className="text-center">
-                                                        [24DC113]
+                                                        [25DC113]
                                                     </div></> : <>
                                                     <p className="text-center">Upto 500 good  intent keywords </p>
-                                                    <p className="text-center">[24DC105]</p>
+                                                    <p className="text-center">[25DC105]</p>
                                                 </>
                                         }
 
@@ -301,7 +301,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 INR 19.5K per annum
                                             </p>
                                             <div id="i8id6r" className="mt-5 text-center">
-                                                [24DC110]
+                                                [25DC110]
                                             </div>
                                         </div>
                                     </div>
@@ -311,7 +311,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 INR 34.5K per annum
                                             </p>
                                             <div id="i8id6r" className="mt-5 text-center">
-                                                [24DC114]
+                                                [25DC114]
                                             </div>
                                         </div>
                                     </div></>
@@ -342,7 +342,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8  ">
                                 <div>
                                     <p className="mb-1 text-xl font-bold">Setup Charges</p>
-                                    <p className="italic">{formInputs.proposalType === "PropGenX" && "For all centers or courses launched within 1 year of contract (up to max 10)"}{formInputs.proposalType === "HealthGenX" && "For all centers launched within 1 year of contract (up to max 10)"}{formInputs.proposalType === "LeadTitanX" && "For all products / offering of the company"}</p>
+                                    <p className="italic">{formInputs.proposalType === "PropGenX" && "For all projects* launched within 1 year of contract  (*subject to terms & conditions)"}{formInputs.proposalType === "HealthGenX" && "For all services marketed within 1 year of contract* (*subject to Terms & Conditions)"}{formInputs.proposalType === "LeadTitanX" && "For all products / offering of the company (up to Max. 10 products / offerings)"}</p>
 
                                     <div className="mt-2 grid gap-2">
                                         <div id="i0mbks" className="flex gap-3">
@@ -363,88 +363,75 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 Ad copy writing
                                             </div>
                                         </div>
-                                        {
-                                            formInputs.proposalType !== "LeadTitanX" ? <>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Campaign Setup
-                                                    </div>
-                                                </div>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                Landing page design {formInputs.proposalType === "PropGenX"
+                                                    ? "(for 1 project)"
+                                                    : formInputs.proposalType === "LeadTitanX"
+                                                        ? "(for the first 3 product / offerings)"
+                                                        : "(for 1 service and all centers)"}
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Up to 100 good intent keywords
-                                                    </div>
-                                                </div>
-                                            </> : <>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                Lead qualifying framework setup
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Landing page design (for the first 3 product/offering)
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
 
-                                                    </div>
-                                                </div>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                Campaign Setup
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Lead qualifying framework setup
-                                                    </div>
-                                                </div>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Campaign Setup
-                                                    </div>
-                                                </div>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
+                                                Ads Market Realignment
+
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
+
+                                            </span>
+                                            <div id="i8id6r" className="">
 
 
-                                                        Ads Realignment
+                                                Dashboard + AutoTune
 
-                                                    </div>
-                                                </div>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Dashboard + AutoTune
+                                            </span>
+                                            <div id="i8id6r" className="">
 
-                                                    </div>
-                                                </div>
-                                                <div id="i0mbks" className="flex gap-3">
-                                                    <span id="idghz9" className="mt-5">
-                                                        <Bullet />
 
-                                                    </span>
-                                                    <div id="i8id6r" className="">
-                                                        Tech stack setup for lead delivery
-                                                    </div>
-                                                </div>
-                                            </>
-                                        }
+
+                                                Tech stack setup for lead delivery
+
+                                            </div>
+                                        </div>
 
 
                                     </div>
@@ -452,43 +439,50 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             </div>
                             <div className="col-span-5 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
                                 <div>
-                                    <p className="mb-1 text-center text-xl font-bold">INR {formInputs.proposalType === "LeadTitanX" ? "6" : "4"}L (for 1 Year)</p>
+                                    <p className="mb-1 text-center text-xl font-bold">INR 6L (for 1 Year)</p>
+                                    <p className="text-center mt-3">{formInputs.proposalType === "LeadTitanX" ? "[25LE107]" : "[25HP101 & 25HP104]"}</p>
+                                    <div className="my-4 grid gap-2">
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
+
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                Up to {formInputs.proposalType === "LeadTitanX" ? "500" : "100"} good intent keywords {formInputs.proposalType === "LeadTitanX" && "per product"}
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
+
+                                            </span>
+                                            <div id="i8id6r" className="">
+
+                                                Landing pages with dynamic
+                                                headings
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5">
+                                                <Bullet />
+
+                                            </span>
+                                            <div id="i8id6r" className="">
+
+                                                First Month’s AI - Market
+                                                Realignment included
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
                                     {
-                                        formInputs.proposalType === "LeadTitanX" && <div className="mt-2 grid gap-2">
-                                            <div id="i0mbks" className="flex gap-3">
-                                                <span id="idghz9" className="mt-5">
-                                                    <Bullet />
-
-                                                </span>
-                                                <div id="i8id6r" className="">
-                                                    Up to 500 good intent keywords per product
-                                                </div>
-                                            </div>
-                                            <div id="i0mbks" className="flex gap-3">
-                                                <span id="idghz9" className="mt-5">
-                                                    <Bullet />
-
-                                                </span>
-                                                <div id="i8id6r" className="">
-
-                                                    Landing pages with dynamic
-                                                    headings
-                                                </div>
-                                            </div>
-                                            <div id="i0mbks" className="flex gap-3">
-                                                <span id="idghz9" className="mt-5">
-                                                    <Bullet />
-
-                                                </span>
-                                                <div id="i8id6r" className="">
-
-                                                    First Month's Al- Market Realignment included
-                                                </div>
-                                            </div>
+                                        formInputs.proposalType !== "LeadTitanX" && <div className="text-center font-bold">
+                                            25% off on 2nd year’s engagement
                                         </div>
                                     }
 
-                                    <p className="text-center mt-3">{formInputs.proposalType === "LeadTitanX" ? "[24LE107]" : "[24HP101]"}</p>
                                 </div>
 
                             </div>
@@ -497,7 +491,14 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             </div>
                             <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8  ">
                                 <div>
-                                    <p className="mb-1 text-xl font-bold">Landing Pages {formInputs.proposalType !== "LeadTitanX" ? "(add-on)" : "(4th product / offering onwards)"}</p>
+                                    <p className="mb-1 text-xl font-bold">
+                                        Landing Pages{" "}
+                                        {formInputs.proposalType === "PropGenX"
+                                            ? "(2nd project onwards)"
+                                            : formInputs.proposalType !== "LeadTitanX"
+                                                ? "(2nd service onwards)"
+                                                : "(4th product / offering onwards)"}
+                                    </p>
                                     <p className="italic">Contextual landing pages to improve conversation ratio and generate qualified leads</p>
 
                                     <div className="mt-2 grid gap-2">
@@ -524,8 +525,13 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             </div>
                             <div className="col-span-5 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
                                 <div>
-                                    <p className="mb-1 text-center text-xl font-bold">{formInputs.proposalType === "LeadTitanX" ? "INR 44K per product / offering" : "INR 44K per Center or Course"}</p>
-                                    <p className="text-center mt-3">{formInputs.proposalType === "LeadTitanX" ? "[24LE110]" : "[24HP103]"}</p>
+                                    <p className="mb-1 text-center text-xl font-bold">{formInputs.proposalType === "HealthGenX"
+                                        ? "INR 44K per Service"
+                                        : formInputs.proposalType === "LeadTitanX"
+                                            ? "INR 44K per product / offering"
+                                            : "INR 44K per Site"}
+                                    </p>
+                                    <p className="text-center mt-3">{formInputs.proposalType === "LeadTitanX" ? "[25LE110]" : "[25HP103]"}</p>
                                 </div>
 
                             </div>
@@ -536,7 +542,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                     </div>
                                     <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8  ">
                                         <div>
-                                            <p className="mb-1 text-xl font-bold">Ai Market Realignment (Optional)</p>
+                                            <p className="mb-1 text-xl font-bold">AI - Market Realignment (Optional)</p>
 
 
                                             <div className="mt-2 grid gap-2">
@@ -565,8 +571,9 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                     </div>
                                     <div className="col-span-5 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
                                         <div>
-                                            <p className="mb-1 text-center text-xl font-bold">INR 43.5K per instance</p>
-                                            <p className="text-center mt-3">[24HP102]</p>
+                                            <p className="mb-1 text-center text-xl font-bold">INR 43.5K per QTR
+                                            </p>
+                                            <p className="text-center mt-3">[25HP102]</p>
                                         </div>
 
                                     </div></>

@@ -95,6 +95,30 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 consecutive days starting from date of payment for that support.
                             </div>
                         </div>
+
+                        {
+                            ["AdGenX", "LeadGenX", "PropGenX", "HealthGenX","LeadTitanX"].includes(formInputs.proposalType) && <div className="flex gap-3">
+                                <div className="mt-5">
+                                    <Bullet />
+                                </div>
+                                <div id="i8id6r" className="">
+                                    Upon payment against the provided proposal, all terms and conditions outlined within the proposal shall
+                                    be deemed accepted.
+                                </div>
+                            </div>
+                        }
+                        {["AdGenX", "LeadGenX", "PropGenX", "HealthGenX","LeadTitanX"].includes(formInputs.proposalType) && <div className="flex gap-3">
+                            <div className="mt-5">
+                                <Bullet />
+                            </div>
+                            <div id="i8id6r" className="">
+                                This proposal is exclusively applicable to the single legal entity corresponding to the specified GST
+                                number. It does not extend to group companies or joint ventures or other related partnership firms etc
+                                with distinct legal identities.
+
+                            </div>
+                        </div>
+                        }
                     </div>
                     <div className="mt-10 grid gap-1">
                         <p className="text-xl font-bold">Delivery Terms :</p>
@@ -117,11 +141,14 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                     <Bullet />
                                 </div>
                                 <div>
-                                    The quality and relevance of the generated ad copies are directly dependent on the keyword Input and persona choices given by customers. Inaiways is not responsible for the outcome of the campaigns or any discrepancies arising from inaccurate, incomplete, or insufficient input details required to set up the Ad campaign. For more details refer to https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages.
+                                    The quality and relevance of the generated ad copies are directly dependent on the keyword Input and
+                                    persona choices given by customers. Inaiways is not responsible for the outcome of the campaigns or
+                                    any discrepancies arising from inaccurate, incomplete, or insufficient input details required to set up
+                                    the Ad campaign. For more details refer to https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
+
                                 </div>
                             </div>
                         )}
-
                         {(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") &&
                             [
                                 "The customer must share in the writing the details required for setting up the Ad campaign (keywords, good keywords, bad keywords, or any other required information).",
@@ -148,199 +175,78 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                             ))}
                     </div>
-                    <div className="mt-10 grid gap-1">
-                        <p className="text-xl font-bold">
-                            Google Ads Policy Compliance and Responsibility :
-                        </p>
+                    {
+                        formInputs.proposalType !== "AdGenX" && <>
+                            <div className="mt-10 grid gap-1">
+                                <p className="text-xl font-bold">
+                                    Google Ads Policy Compliance and Responsibility :
+                                </p>
 
-                        <div className="flex gap-3">
-                            <div className="mt-5">
-                                <Bullet />
-                            </div>
-                            <div>
-                                Inaiways is not liable for any disruptions or consequences arising from policy violations, and the client agrees to promptly resolve such matters with Google and bear any associated costs or damages.
-                            </div>
-                        </div>
-
-                        {formInputs.proposalType === "LeadGenX" && (
-                            <div className="flex gap-3">
-                                <div className="mt-5">
-                                    <Bullet />
-                                </div>
-                                <div>
-                                    Refer to{" "}
-
-                                    https://www.inaiways.com/v/terms-conditions-leadgenx-with-lp
-                                    for more details.
-                                </div>
-                            </div>
-                        )}
-
-                        {formInputs.proposalType === "AdGenX" && (
-                            <div className="flex gap-3">
-                                <div className="mt-5">
-                                    <Bullet />
-                                </div>
-                                <div>
-                                    For more details refer to{" "}
-
-                                    https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
-                                </div>
-                            </div>
-                        )}
-
-                        {formInputs.proposalType === "LeadTitanX" && (
-                            <div className="flex gap-3">
-                                <div className="mt-5">
-                                    <Bullet />
-                                </div>
-                                <div>
-                                    Refer to{" "}
-
-                                    https://www.inaiways.com/v/terms-conditions-enterprises
-                                    for more details.
-                                </div>
-                            </div>
-                        )}
-
-                        {(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") && (
-                            <div className="flex gap-3">
-                                <div className="mt-5">
-                                    <Bullet />
-                                </div>
-                                <div>
-                                    For more details refer to{" "}
-
-                                    https://www.inaiways.com/v/terms-conditions-direct-promoters
-                                </div>
-                            </div>
-                        )}
-                    </div>
-
-                    <div className="mt-10 grid gap-1">
-                        <p className="text-xl font-bold">Delivery & support limits :</p>
-
-                        <div className="flex gap-3">
-                            <div className="mt-5">
-                                <Bullet />
-                            </div>
-                            <div>
-                                Maximum keyword process of 5000 Keywords will be processed for research.
-                            </div>
-                        </div>
-
-                        {formInputs.proposalType && (
-                            <div className="flex gap-3">
-                                <div className="mt-5">
-                                    <Bullet />
-                                </div>
-                                <div>
-                                    {{
-                                        LeadGenX: (
-                                            <span>
-                                                Refer to{" "}
-
-                                                https://www.inaiways.com/v/terms-conditions-leadgenx-with-lp
-
-                                                for more details.
-                                            </span>
-                                        ),
-                                        AdGenX: (
-                                            <span>
-                                                Refer to{" "}
-
-                                                https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
-                                                for more details.
-                                            </span>
-                                        ),
-                                        PropGenX: (
-                                            <span>
-                                                Refer to{" "}
-
-                                                https://www.inaiways.com/v/terms-conditions-direct-promoters
-                                                for more details.
-                                            </span>
-                                        ),
-                                        HealthGenX: (
-                                            <span>
-                                                Refer to{" "}
-
-                                                https://www.inaiways.com/v/terms-conditions-direct-promoters
-                                                for more details.
-                                            </span>
-                                        ),
-                                        LeadTitanX: (
-                                            <span>
-                                                Refer to{" "}
-
-                                                https://www.inaiways.com/v/terms-conditions-enterprises
-                                                for more details.
-                                            </span>
-                                        ),
-                                    }[formInputs.proposalType] || ""}
-                                </div>
-                            </div>
-                        )}
-
-                        {(formInputs.proposalType === "HealthGenX" || formInputs.proposalType === "PropGenX") && (
-                            <>
                                 <div className="flex gap-3">
                                     <div className="mt-5">
                                         <Bullet />
                                     </div>
                                     <div>
-                                        Max 10 Centers or Courses are covered under - 24HP101 within a Year.
+                                        Inaiways is not liable for any disruptions or consequences arising from policy violations, and the client agrees to promptly resolve such matters with Google and bear any associated costs or damages.
                                     </div>
                                 </div>
-                                <div className="flex gap-3">
-                                    <div className="mt-5">
-                                        <Bullet />
-                                    </div>
-                                    <div>
-                                        Centers or Courses from or as Channel Partners and Joint Ventures are covered under - 24HP101.
-                                    </div>
-                                </div>
-                            </>
-                        )}
-                    </div>
 
-                    <div className="mt-10 grid gap-1">
-                        <p className="text-xl font-bold">General Terms :</p>
-
-                        <div className="flex gap-3">
-                            <div className="mt-5">
-                                <Bullet />
-                            </div>
-                            <div>
-                                Government regulations, local authority regulations, and ad platform policies supersede any features in the AI-Portal product and service.
-                            </div>
-                        </div>
-
-                        {formInputs.proposalType !== "LeadTitanX" && (
-                            (() => {
-                                const proposalLinks = {
-                                    LeadGenX: "https://www.inaiways.com/v/terms-conditions-leadgenx-with-lp",
-                                    AdGenX: "https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages",
-                                    PropGenX: "https://www.inaiways.com/v/terms-conditions-direct-promoters",
-                                    HealthGenX: "https://www.inaiways.com/v/terms-conditions-direct-promoters",
-                                };
-
-                                const url = proposalLinks[formInputs.proposalType];
-
-                                return url ? (
+                                {formInputs.proposalType === "LeadGenX" && (
                                     <div className="flex gap-3">
                                         <div className="mt-5">
                                             <Bullet />
                                         </div>
                                         <div>
-                                            For more details refer to {url}
+                                            Refer to{" "}
+
+                                            https://www.inaiways.com/v/terms-conditions-leadgenx-with-lp
+                                            for more details.
                                         </div>
                                     </div>
-                                ) : null;
-                            })()
-                        )}
-                    </div>
+                                )}
 
+                                {formInputs.proposalType === "AdGenX" && (
+                                    <div className="flex gap-3">
+                                        <div className="mt-5">
+                                            <Bullet />
+                                        </div>
+                                        <div>
+                                            For more details refer to{" "}
+
+                                            https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
+                                        </div>
+                                    </div>
+                                )}
+
+                                {formInputs.proposalType === "LeadTitanX" && (
+                                    <div className="flex gap-3">
+                                        <div className="mt-5">
+                                            <Bullet />
+                                        </div>
+                                        <div>
+                                            Refer to{" "}
+
+                                            https://www.inaiways.com/v/terms-conditions-enterprises
+                                            for more details.
+                                        </div>
+                                    </div>
+                                )}
+
+                                {(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") && (
+                                    <div className="flex gap-3">
+                                        <div className="mt-5">
+                                            <Bullet />
+                                        </div>
+                                        <div>
+                                            For more details refer to{" "}
+
+                                            https://www.inaiways.com/v/terms-conditions-direct-promoters
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </>
+                    }
                 </div>
             </div>
         </div>

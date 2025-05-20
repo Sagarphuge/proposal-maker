@@ -29,10 +29,10 @@ const PdfPage2 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
 
     const escalationPage = {
       AdGenX: null,
-      PropGenX: 13,
-      LeadGenX: 14,
-      LeadTitanX: 14,
-      HealthGenX: 13,
+      PropGenX: 14,
+      LeadGenX: 15,
+      LeadTitanX: 15,
+      HealthGenX: 14,
     };
 
     return (

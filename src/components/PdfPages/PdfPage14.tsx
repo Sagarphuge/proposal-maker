@@ -6,7 +6,7 @@ import { ProposalType } from "../../schema/schema";
 const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
     ({ formInputs }, ref) => {
     return <div ref={ref} className="h-[1700px] relative text-xl text-neutral-900">
-        <div className="absolute top-6 right-6">{(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") ? 13 : 14}</div>
+        <div className="absolute top-6 right-6">{(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") ? 14 : 15}</div>
         <div className="h-full px-10">
             <div className="h-full border-s ps-12">
                 <div className="pt-10">

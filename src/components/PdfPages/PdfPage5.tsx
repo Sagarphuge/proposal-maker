@@ -4,275 +4,284 @@ import { ProposalType } from '../../schema/schema';
 import Bullet from "../BulletPoint";
 
 const PdfPage5 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
-  ({ formInputs }, ref) => {
-    return (
-        <div id="5" ref={ref} className="h-[1700px] relative text-xl text-neutral-900">
-            <div className="absolute top-6 right-6">5</div>
-            <div className="h-full px-10">
-                <div className="h-full border-s ps-12">
-                    <div className="pt-10">
-                        <Logo />
+    ({ formInputs }, ref) => {
+        return (
+            <div id="5" ref={ref} className="h-[1700px] relative text-xl text-neutral-900">
+                <div className="absolute top-6 right-6">5</div>
+                <div className="h-full px-10">
+                    <div className="h-full border-s ps-12">
+                        <div className="pt-10">
+                            <Logo />
+                        </div>
+                        <div className="relative mt-10 mb-20">
+                            <div className="absolute top-2 -left-12 h-40 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
+                            <p className="text-3xl">
+                                AI-Powered Lead Generation Plans
+                            </p>
+                            <p className="text-7xl font-black">Optional {formInputs.proposalType === "LeadTitanX" ? "Investment" : "Charges"}</p>
+                        </div>
+                        {
+                            formInputs.proposalType !== "LeadTitanX" && <div className="mb-16 text-3xl font-medium text-blue-600">
+                                Charges for availing additional services
+                            </div>
+                        }
+
+                        {
+                            (formInputs.proposalType === "LeadGenX" || formInputs.proposalType === "AdGenX") &&
+                            <div className="grid grid-cols-12">
+                                <div className="col-span-1 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
+                                    <p className="-mt-5">
+                                        SR. <br />
+                                        NO
+                                    </p>
+                                </div>
+                                <div className="col-span-5 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
+                                    <p className="-mt-5">Particulars</p>
+                                </div>
+                                <div className="col-span-3 grid h-20 place-content-center border-x border-y border-gray-400 text-center text-lg font-semibold uppercase">
+                                    <p className="-mt-5">
+                                        ESSENTIALS <br />
+                                        <span className="font-normal capitalize">{
+                                            formInputs.proposalType === "LeadGenX" && "(Without Taxes)"
+                                        }</span>
+                                    </p>
+                                </div>
+                                <div className="col-span-3 grid h-20 place-content-center border-y border-e border-gray-400 text-center text-lg font-semibold uppercase">
+                                    <p className="-mt-5">
+                                        BUSINESS-PRO <br />
+                                        <span className="font-normal capitalize">{
+                                            formInputs.proposalType === "LeadGenX" && "(Without Taxes)"
+                                        }</span>
+                                    </p>
+                                </div>
+
+                                <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
+                                    <p className="font-bold">1</p>
+                                </div>
+
+                                <div className="col-span-5 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8 ">
+                                    <div>
+                                        <p className="text-xl font-bold">{formInputs.proposalType === "AdGenX" ? "AI Optimization" : "AI - Market Realignment"}</p>
+                                        <div className="mt-2 grid gap-2">
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Block non-performing keywords
+                                                </div>
+                                            </div>
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Align search terms to company’s keywords
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-span-3 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold">INR 4.5K per month</p>
+                                        <p className="mt-2 font-normal">
+                                            (to be billed quarterly - 13.5K) <br />
+                                            {
+                                                formInputs.proposalType ==="AdGenX" ? " [25DC102]":"[25DC111]"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-span-3 grid items-center gap-5 border-e border-b border-gray-400 bg-green-50 p-4 pb-8">
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold">INR 7.5K per month</p>
+                                        <p className="mt-2 font-normal">
+                                            (to be billed quarterly - 22.5K) <br />
+                                           {
+                                                formInputs.proposalType ==="AdGenX" ? " [25DC106]":"[25DC115]"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
+                                    <p className="font-bold">2</p>
+                                </div>
+
+                                <div className="col-span-5 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8 ">
+                                    <div>
+                                        <p className="text-xl font-bold">Expert Support</p>
+                                        <div className="mt-2 grid gap-2">
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    All features of {formInputs.proposalType === "LeadGenX" ? "AI - Market Realignment" : "AI Optimization"}
+                                                </div>
+                                            </div>
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Up to 30 mins per week to discuss & analyse campaign
+                                                    progress
+                                                </div>
+                                            </div>
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Improve Ad setup for different personas, bidding,
+                                                    targeting, and Ad scheduling
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-span-3 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold">INR 11.5K per month</p>
+                                        <p className="mt-2 font-normal">
+                                            (to be billed quarterly - 34.5K)
+                                            <br />
+                                            {
+                                                formInputs.proposalType ==="AdGenX" ? " [25DC103]":"[25DC112]"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-span-3 grid items-center gap-5 border-e border-b border-gray-400 bg-green-50 p-4 pb-8">
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold">INR 14.5K per month</p>
+                                        <p className="mt-2 font-normal">
+                                            (to be billed quarterly - 43.5K) <br />
+                                  
+  {
+                                                formInputs.proposalType ==="AdGenX" ? " [25DC107]":"[25DC116]"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        {
+                            formInputs.proposalType === "LeadTitanX" && <div className="grid grid-cols-12">
+                                <div className="col-span-2 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
+                                    <p className='-mt-5'>
+                                        SR.
+                                        NO
+                                    </p>
+                                </div>
+                                <div className="col-span-6 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
+                                    <p className='-mt-5'>Particulars</p>
+                                </div>
+                                <div className="col-span-4 grid h-20 place-content-center border-x border-y border-gray-400 text-center text-lg font-semibold uppercase">
+                                    <p className='-mt-5'>
+                                        AMOUNT
+                                        <span className="font-normal capitalize">(Without Taxes)</span>
+                                    </p>
+                                </div>
+                                <div className="col-span-2 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
+                                    <p className="font-bold">1</p>
+                                </div>
+                                <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8 ">
+                                    <div>
+                                        <p className="text-xl font-bold">AI Optimization</p>
+                                        <div className="mt-2 grid gap-2">
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Block non-performing keywords
+                                                </div>
+                                            </div>
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Align search terms to company’s keywords
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-span-4 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold">INR 14.5K per instance</p>
+                                        <p className="mt-2 font-normal">
+                                            (to be billed quarterly - 43.5K) <br />
+                                            [25LE108]
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-span-2 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
+                                    <p className="font-bold">2</p>
+                                </div>
+                                <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8  ">
+                                    <div>
+                                        <p className="text-xl font-bold">Expert Support</p>
+                                        <div className="mt-2 grid gap-2">
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    All features of AI - Market Realignment
+                                                </div>
+                                            </div>
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Up to 30 mins per week to discuss & analyse campaign
+                                                    progress
+                                                </div>
+                                            </div>
+                                            <div id="i0mbks" className="flex gap-3">
+                                                <span id="idghz9" className="mt-5 text-neutral-900">
+                                                    < Bullet />
+
+                                                </span>
+                                                <div id="i8id6r" className="">
+                                                    Improve Ad setup for different personas, bidding,
+                                                    targeting, and Ad scheduling
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-span-4 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
+                                    <div className="text-center">
+                                        <p className="text-xl font-bold">INR 34.5K per month</p>
+                                        <p className="mt-2 font-normal">
+                                            (to be billed quarterly - 103.5K) <br />
+                                            [25LE109]
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        }
+
                     </div>
-                    <div className="relative mt-10 mb-20">
-                        <div className="absolute top-2 -left-12 h-40 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
-                        <p className="text-3xl">
-                            AI-Powered Lead Generation Plans
-                        </p>
-                        <p className="text-7xl font-black">Optional {formInputs.proposalType === "LeadTitanX" ? "Investment" : "Charges"}</p>
-                    </div>
-                    {
-                        formInputs.proposalType !== "LeadTitanX" && <div className="mb-16 text-3xl font-medium text-blue-600">
-                            Charges for availing additional services
-                        </div>
-                    }
-
-                    {
-                        (formInputs.proposalType === "LeadGenX" || formInputs.proposalType === "AdGenX") &&
-                        <div className="grid grid-cols-12">
-                            <div className="col-span-1 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
-                                <p className="-mt-5">
-                                    SR. <br />
-                                    NO
-                                </p>
-                            </div>
-                            <div className="col-span-5 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
-                                <p className="-mt-5">Particulars</p>
-                            </div>
-                            <div className="col-span-3 grid h-20 place-content-center border-x border-y border-gray-400 text-center text-lg font-semibold uppercase">
-                                <p className="-mt-5">
-                                    ESSENTIALS <br />
-                                    <span className="font-normal capitalize">{
-                                        formInputs.proposalType === "LeadGenX" && "(Without Taxes)"
-                                    }</span>
-                                </p>
-                            </div>
-                            <div className="col-span-3 grid h-20 place-content-center border-y border-e border-gray-400 text-center text-lg font-semibold uppercase">
-                                <p className="-mt-5">
-                                    BUSINESS-PRO <br />
-                                    <span className="font-normal capitalize">{
-                                        formInputs.proposalType === "LeadGenX" && "(Without Taxes)"
-                                    }</span>
-                                </p>
-                            </div>
-
-                            <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
-                                <p className="font-bold">1</p>
-                            </div>
-
-                            <div className="col-span-5 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8 ">
-                                <div>
-                                    <p className="text-xl font-bold">{formInputs.proposalType === "AdGenX" ? "AI Optimization" : "AI - Market Realignment"}</p>
-                                    <div className="mt-2 grid gap-2">
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Block non-performing keywords
-                                            </div>
-                                        </div>
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Align search terms to company’s keywords
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-span-3 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="text-center">
-                                    <p className="text-xl font-bold">INR 4.5K per month</p>
-                                    <p className="mt-2 font-normal">
-                                        (to be billed quarterly - 13.5K) <br />
-                                        [24DC102]
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-span-3 grid items-center gap-5 border-e border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="text-center">
-                                    <p className="text-xl font-bold">INR 7.5K per month</p>
-                                    <p className="mt-2 font-normal">
-                                        (to be billed quarterly - 22.5K) <br />
-                                        [24DC106]
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
-                                <p className="font-bold">2</p>
-                            </div>
-
-                            <div className="col-span-5 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8 ">
-                                <div>
-                                    <p className="text-xl font-bold">Expert Support</p>
-                                    <div className="mt-2 grid gap-2">
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                All features of {formInputs.proposalType === "LeadGenX" ? "AI - Market Realignment" : "AI Optimization"}
-                                            </div>
-                                        </div>
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Up to 30 mins per week to discuss & analyse campaign
-                                                progress
-                                            </div>
-                                        </div>
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Improve Ad setup for different personas, bidding,
-                                                targeting, and Ad scheduling
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-span-3 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="text-center">
-                                    <p className="text-xl font-bold">INR 11.5K per month</p>
-                                    <p className="mt-2 font-normal">
-                                        (to be billed quarterly - 34.5K)
-                                        <br />
-                                        [24DC103]
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-span-3 grid items-center gap-5 border-e border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="text-center">
-                                    <p className="text-xl font-bold">INR 14.5K per month</p>
-                                    <p className="mt-2 font-normal">
-                                        (to be billed quarterly - 43.5K) <br />
-                                        [24DC107]
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    {
-                        formInputs.proposalType === "LeadTitanX" && <div className="grid grid-cols-12">
-                            <div className="col-span-2 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold">
-                                <p className='-mt-5'>
-                                    SR.
-                                    NO
-                                </p>
-                            </div>
-                            <div className="col-span-6 grid h-20 place-content-center border-y border-s border-gray-400 text-lg font-semibold uppercase">
-                                <p className='-mt-5'>Particulars</p>
-                            </div>
-                            <div className="col-span-4 grid h-20 place-content-center border-x border-y border-gray-400 text-center text-lg font-semibold uppercase">
-                                <p className='-mt-5'>
-                                    AMOUNT
-                                    <span className="font-normal capitalize">(Without Taxes)</span>
-                                </p>
-                            </div>
-                            <div className="col-span-2 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
-                                <p className="font-bold">1</p>
-                            </div>
-                            <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8 ">
-                                <div>
-                                    <p className="text-xl font-bold">AI Optimization</p>
-                                    <div className="mt-2 grid gap-2">
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Block non-performing keywords
-                                            </div>
-                                        </div>
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Align search terms to company’s keywords
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-span-4 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="text-center">
-                                    <p className="text-xl font-bold">INR 14.5K per instance</p>
-                                    <p className="mt-2 font-normal">
-                                        (to be billed quarterly - 43.5K) <br />
-                                        [24LE108]
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-span-2 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
-                                <p className="font-bold">2</p>
-                            </div>
-                            <div className="col-span-6 grid items-center border-s border-b border-gray-400 bg-cyan-50 p-4 pb-8  ">
-                                <div>
-                                    <p className="text-xl font-bold">Expert Support</p>
-                                    <div className="mt-2 grid gap-2">
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                All features of AI - Market Realignment
-                                            </div>
-                                        </div>
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Up to 30 mins per week to discuss & analyse campaign
-                                                progress
-                                            </div>
-                                        </div>
-                                        <div id="i0mbks" className="flex gap-3">
-                                            <span id="idghz9" className="mt-5 text-neutral-900">
-                                                < Bullet />
-
-                                            </span>
-                                            <div id="i8id6r" className="">
-                                                Improve Ad setup for different personas, bidding,
-                                                targeting, and Ad scheduling
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-span-4 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="text-center">
-                                    <p className="text-xl font-bold">INR 34.5K per month</p>
-                                    <p className="mt-2 font-normal">
-                                        (to be billed quarterly - 103.5K) <br />
-                                        [24LE109]
-                                    </p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    }
-
                 </div>
             </div>
-        </div>
-    )
-})
+        )
+    })
 
 export default PdfPage5

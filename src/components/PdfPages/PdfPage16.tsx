@@ -34,7 +34,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 <div>
                                     Inaiways is not liable for any disruptions or consequences arising from policy violations, and the client
                                     agrees to promptly resolve such matters with Google and bear any associated costs or damages. For
-                                    more details refer to https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
+                                    more details refer to https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages.
 
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div>
                                     Maximum keyword process of 5000 Keywords will be processed for research. For more details refer to
-                                   https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
+                                   https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages.
 
                                 </div>
                             </div>
@@ -70,7 +70,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div>
                                     Government regulations, local authority regulations, and ad platform policies supersede any features in
-                                    the AI-Portal product and service. For more details refer to  https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
+                                    the AI-Portal product and service. For more details refer to  https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages.
 
 
                                 </div>
@@ -163,7 +163,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                         <Bullet />
                                     </div>
                                     <div>
-                                        Max 10 Projects are covered under - 25HP101 within a Year
+                                        Max 10 Projects are covered under - 25HP101 within a Year.
 
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                     </div>
                                     <div>
                                         {
-                                            formInputs.proposalType==="HealthGenX" ?"Centers or Services from or as Channel Partners and Joint Ventures are covered under -25HP101" :" Projects from or as Channel Partners and Joint Ventures are covered under - 25HP101"
+                                            formInputs.proposalType==="HealthGenX" ?"Centers or Services from or as Channel Partners and Joint Ventures are covered under -25HP101." :" Projects from or as Channel Partners and Joint Ventures are covered under - 25HP101."
                                         }
                                        
                                     </div>
@@ -231,7 +231,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                         <Bullet />
                                     </div>
                                     <div>
-                                        Max 10 products/ offerings are covered under - 25LE107 within a Year
+                                        Max 10 products/ offerings are covered under - 25LE107 within a Year.
 
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@ const PdfPage16 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 <Bullet />
                             </div>
                             <div>
-                                For more details refer to https://www.inaiways.com/v/terms-conditions-enterprises
+                                For more details refer to https://www.inaiways.com/v/terms-conditions-enterprises.
 
                             </div>
                         </div>

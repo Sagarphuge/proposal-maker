@@ -24,36 +24,58 @@ const PdfPage10 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 <p className="mb-2 text-3xl font-bold ">Setup to AI</p>
                                 <p>
                                     Availability for 1 hour during the onboarding meeting to set
-                                    up AI. To make this meeting productive, client can come
+                                    up AI {(formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") && "Agent Role finalisation"}. To make this meeting productive, client can come
                                     prepared with the following :
                                 </p>
                                 <div className="mt-4 grid gap-2 ps-8 font-semibold">
-                                    <div id="i0mbks" className="flex gap-3">
-                                        <span id="idghz9" className="mt-5 text-neutral-900">
-                                            < Bullet />
-                                        </span>
-                                        <div id="i8id6r" className="">
-                                            List (websites) of 4 to 5 competitors
+                                    {(formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? <>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5 text-neutral-900">
+                                                < Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                Textual workflow of conversation
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="i0mbks" className="flex gap-3">
-                                        <span id="idghz9" className="mt-5 text-neutral-900">
-                                            < Bullet />
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5 text-neutral-900">
+                                                < Bullet />
 
-                                        </span>
-                                        <div id="i8id6r" className="">
-                                            4 to 5 good keywords
-                                        </div>
-                                    </div>
-                                    <div id="i0mbks" className="flex gap-3">
-                                        <span id="idghz9" className="mt-5 text-neutral-900">
-                                            < Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
 
-                                        </span>
-                                        <div id="i8id6r" className="">
-                                            4 to 5 bad keywords
+                                                Expected Questions and Answers in textual format
+                                            </div>
                                         </div>
-                                    </div>
+                                    </> : <>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5 text-neutral-900">
+                                                < Bullet />
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                List (websites) of 4 to 5 competitors
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5 text-neutral-900">
+                                                < Bullet />
+
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                4 to 5 good keywords
+                                            </div>
+                                        </div>
+                                        <div id="i0mbks" className="flex gap-3">
+                                            <span id="idghz9" className="mt-5 text-neutral-900">
+                                                < Bullet />
+
+                                            </span>
+                                            <div id="i8id6r" className="">
+                                                4 to 5 bad keywords
+                                            </div>
+                                        </div>
+                                    </>}
+
                                 </div>
                             </div>
                         </div>
@@ -61,23 +83,49 @@ const PdfPage10 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <div className="-mt-3 text-5xl font-black text-blue-500">2</div>
                             <div className="">
                                 <p className="mb-2 text-3xl font-bold ">Providing Collaterals</p>
-                                <p>
-                                    Images/Media/Marketing Material required for each Ad group +
-                                    High resolution logos files. The client must provide the
-                                    necessary marketing collaterals (raw content, images, logo,
-                                    etc.) required for the project.
-                                </p>
+                                {
+                                    (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? <p>
+                                        Providing latest textual documents for example FAQ's, Brochure,
+                                        Collateral, FAQ's, Pricing Details for the training of the Agent.
+                                    </p> : <p>
+                                        Images/Media/Marketing Material required for each Ad group +
+                                        High resolution logos files. The client must provide the
+                                        necessary marketing collaterals (raw content, images, logo,
+                                        etc.) required for the project.
+                                    </p>
+                                }
+
                             </div>
                         </div>
                         <div className="flex gap-6">
                             <div className="-mt-3 text-5xl font-black text-blue-500">3</div>
                             <div className="">
-                                <p className="mb-2 text-3xl font-bold ">DNS Setup</p>
-                                <p>
-                                    DNS changes to create subdomain for hosting the landing pages.
-                                </p>
+                                <p className="mb-2 text-3xl font-bold "> {
+                                    (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "Dialer Service Details" : " DNS Setup"
+                                } </p>
+                                {
+                                    (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? <p>Provide Telephone, Dialer, Whatsapp, Email service details for further
+                                        integration with AI Agent.
+
+                                    </p> : <p>
+                                        DNS changes to create subdomain for hosting the landing pages.
+                                    </p>
+                                }
+
                             </div>
                         </div>
+                        {
+                            (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") &&
+                            <div className="flex gap-6">
+                                <div className="-mt-3 text-5xl font-black text-blue-500">4</div>
+                                <div className="">
+                                    <p className="mb-2 text-3xl font-bold "> Integration Details</p>
+                                    <p>Facilitating the integrations as per the requirements
+                                    </p>
+
+                                </div>
+                            </div>
+                        }
                         {
                             formInputs.proposalType === "LeadGenX" && <div className="flex gap-6">
                                 <div className="-mt-3 text-5xl font-black text-blue-500">4</div>

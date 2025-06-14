@@ -104,10 +104,10 @@ const ProposalList = ({ list }:{list:ProposalType[]}) => {
                     displayedPosts.map((list) => (
                         <div
                             key={list._id}
-                            className="grid-cols-12 items-center p-4 border-t grid"
+                            className="grid-cols-12 gap-6 items-center p-4 border-t grid"
                         >
                             <div className="col-span-2 capitalize">{list.proposalType}</div>
-                            <div className="col-span-3">{list.companyName}</div>
+                            <div className="col-span-3 truncate">{list.companyName}</div>
                             <div className="col-span-3">{list.spocName}</div>
                             <div className="col-span-3 capitalize">
                                 {list.audiencePersona}

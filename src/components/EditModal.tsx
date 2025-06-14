@@ -79,6 +79,9 @@ const EditForm = () => {
                             <option value="PropGenX">PropGenX</option>
                             <option value="HealthGenX">HealthGenX</option>
                             <option value="LeadTitanX">LeadTitanX</option>
+                            <option value="Agent PRO">Agent PRO</option>
+                            <option value="Agent LIVE">Agent LIVE</option>
+                            <option value="Agent ESSENTIAL">Agent ESSENTIAL</option>
                         </select>
                         {errors.proposalType && <p className="text-red-500 text-sm mt-1">{errors.proposalType.message}</p>}
                     </div>

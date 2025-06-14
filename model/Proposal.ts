@@ -4,7 +4,7 @@ const ProposalSchema = new mongoose.Schema({
   proposalType: {
     type: String,
     required: true,
-    enum: ["LeadGenX", "AdGenX", "PropGenX", "HealthGenX", "LeadTitanX"],
+    enum: ["LeadGenX", "AdGenX", "PropGenX", "HealthGenX", "LeadTitanX","Agent PRO", "Agent LIVE","Agent ESSENTIAL"],
   },
   companyName: {
     type: String,

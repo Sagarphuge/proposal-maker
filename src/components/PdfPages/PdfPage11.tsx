@@ -13,7 +13,7 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
             <div className="h-full px-10">
                 <div className="h-full border-s ps-12">
                     <div className="pt-10">
-                        <Logo/>
+                        <Logo />
                     </div>
                     <div className="relative mt-10 mb-20">
                         <div className="absolute top-2 -left-12 h-36 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
@@ -23,7 +23,10 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                     {
                         formInputs.proposalType !== "AdGenX" ? <>
                             <div className="mb-20">
-                                The project timeline hinges on a thorough understanding of the customer's domain, Google Ads account, and competitors, making the timely receipt of the AI Ads Setup crucial. If this info is not received on schedule, all subsequent steps will be delayed. Additionally, timely payment for Google Ads is essential; any delay in this payment will also push back the project timeline.
+                                {
+                                    (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "The project timeline hinges on a thorough understanding of the customer's domain, and providing the requirements in desired format" : "The project timeline hinges on a thorough understanding of the customer's domain, Google Ads account, and competitors, making the timely receipt of the AI Ads Setup crucial. If this info is not received on schedule, all subsequent steps will be delayed. Additionally, timely payment for Google Ads is essential; any delay in this payment will also push back the project timeline."
+                                }
+
                             </div>
                             <div className="grid grid-cols-12 gap-5">
                                 <div className="col-span-3 grid h-20 place-content-center bg-neutral-900 text-lg font-semibold text-white  ">
@@ -63,17 +66,23 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
                                     <p className="-mt-5">
-                                        Meeting of client’s team with the Inaiways delivery team to
-                                        discuss detailed requirements needed to setup AI from the client
-                                        and derive AI researched output.
+                                        {
+                                            (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "Meeting of client’s team with the Inaiways delivery team to discuss detailed requirements needed to setup AI Agent" : " Meeting of client’s team with the Inaiways delivery team to discuss detailed requirements needed to setup AI from the client and derive AI researched output."
+                                        }
+
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
                                     <div className="-mt-5">
-                                        <p className="text-center font-bold">
-                                            Reviewing AI’s <br />
-                                            Output by Client
-                                        </p>
+                                        {
+                                            (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? <p className="text-center font-bold">
+                                                Signing Off the Plan
+                                            </p> : <p className="text-center font-bold">
+                                                Reviewing AI’s <br />
+                                                Output by Client
+                                            </p>
+                                        }
+
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
@@ -83,9 +92,10 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
                                     <p className="-mt-5">
-                                        Client should review and confirm the output shared by Inaiways
-                                        team. Days will be calculated from this day. We call this day as
-                                        “S”
+                                        {
+                                            (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "Client should signoff the Plan discussed in tne Onboarding meeting for Project initiation " : "Client should review and confirm the output shared by Inaiways team. Days will be calculated from this day. We call this day as “S”"
+                                        }
+
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
@@ -95,22 +105,30 @@ const PdfPage11 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">
                                     <div className="-mt-5">
-                                        <p className="font-bold  ">S+10</p>
+                                        <p className="font-bold  ">
+                                            {
+                                                (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "S+4 Week": "S+10"
+                                            }
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="col-span-6 grid gap-5 p-6">
                                     <p className="-mt-5">
-                                        We will provide the client with a link to the landing pages for
-                                        review. The client should check for any inaccuracies in the
-                                        content but avoid suggesting aesthetic / UI changes.
+                                        {
+                                                (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "Launching of AI Agent": "We will provide the client with a link to the landing pages for review. The client should check for any inaccuracies in the content but avoid suggesting aesthetic / UI changes."
+                                            }
+                                        
                                     </p>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-cyan-50 p-6  ">
                                     <div className="-mt-5">
                                         <p className="text-center font-bold">
-                                            AI - Market <br />
-                                            Realignment
+                                            AI - {
+                                                (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "Agent Retraining": "Market Realignment"
+                                            }  <br />
+                                            
                                         </p>
+                                      
                                     </div>
                                 </div>
                                 <div className="col-span-3 grid place-content-center bg-green-50 p-6">

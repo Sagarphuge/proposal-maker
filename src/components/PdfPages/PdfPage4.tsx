@@ -14,11 +14,14 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                         <Logo />
                     </div>
                     <div className="relative mt-10 mb-20">
-                        <div className="absolute top-2 -left-12 h-40 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
+                        <div className="absolute top-2 -left-12 h-40 w-3 bg-gradient-to-br from-green-500 to-cyan-400"></div>
                         <p className="text-3xl ">
-                            AI-Powered Lead Generation Plans
+                            {
+                                (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "AI-Agents Work Force - Plans" : " AI-Powered Lead Generation Plans"
+                            }
+
                         </p>
-                        <p className="text-7xl font-black">{formInputs.proposalType === "PropGenX" ? "Commercials" : "Investment"}</p>
+                        <p className="text-7xl font-black">{formInputs.proposalType === "PropGenX" || formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL" || formInputs.proposalType==="LeadTitanX" ? "Commercials" : "Investment"}</p>
                     </div>
 
 
@@ -74,7 +77,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <span id="idghz9" className="mt-5">
                                                     <Bullet />
                                                 </span>
-                                                <div id="i8id6r" className="">
+                                                <div id="i8id6r"  >
                                                     Keyword hunting & grouping
                                                 </div>
                                             </div>
@@ -83,7 +86,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Ad copy writing
                                                     </div>
                                                 </div>
@@ -92,7 +95,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Landing page design
                                                     </div>
                                                 </div>
@@ -101,7 +104,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Campaign Setup
                                                     </div>
                                                 </div>
@@ -110,7 +113,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Ads Realignment
                                                     </div>
                                                 </div>
@@ -119,7 +122,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Dashboard + AutoTune
                                                     </div>
                                                 </div>
@@ -132,7 +135,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Keyword hunting & grouping
                                                     </div>
                                                 </div>
@@ -141,7 +144,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Ad Copy writing
                                                     </div>
                                                 </div>
@@ -150,7 +153,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Account Setup                              </div>
                                                 </div>
                                             </>
@@ -160,7 +163,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 </div>
                             </div>
                             <div className="col-span-4 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="">
+                                <div  >
                                     <p className="text-center text-xl font-bold">
                                         {formInputs.proposalType === "LeadGenX" ? "INR 80K (One-time)" : "INR 39.5K"}
                                     </p>
@@ -172,7 +175,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Up to 100 good intent keywords
                                                     </div>
                                                 </div>
@@ -181,7 +184,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                             <Bullet />
 
                                                         </span>
-                                                        <div id="i8id6r" className="">
+                                                        <div id="i8id6r"  >
                                                             Landing pages with dynamic headings
                                                         </div>
                                                     </div>
@@ -190,7 +193,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                             <Bullet />
 
                                                         </span>
-                                                        <div id="i8id6r" className="">
+                                                        <div id="i8id6r"  >
                                                             First Month’s AI - Market Realignment included
                                                         </div>
                                                     </div>
@@ -206,7 +209,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                 </div>
                             </div>
                             <div className="col-span-4 grid items-center gap-5 border-e border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                <div className="">
+                                <div  >
                                     <p className="text-center text-xl font-bold">
                                         {formInputs.proposalType === "LeadGenX" ? "INR 1.2L (One-time)" : "INR 69.5K"}
                                     </p>
@@ -218,7 +221,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Up to 500 good intent keywords
                                                     </div>
                                                 </div>
@@ -227,7 +230,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                             <Bullet />
 
                                                         </span>
-                                                        <div id="i8id6r" className="">
+                                                        <div id="i8id6r"  >
                                                             Landing pages with dynamic headings & images
                                                         </div>
                                                     </div>
@@ -236,7 +239,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                             <Bullet />
 
                                                         </span>
-                                                        <div id="i8id6r" className="">
+                                                        <div id="i8id6r"  >
                                                             First Month’s AI - Market Realignment included
                                                         </div>
                                                     </div>
@@ -245,7 +248,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                             <Bullet />
 
                                                         </span>
-                                                        <div id="i8id6r" className="">
+                                                        <div id="i8id6r"  >
                                                             First Month’s Expert Support included
                                                         </div>
                                                     </div>
@@ -279,7 +282,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Email & WhatsApp notifications
                                                     </div>
                                                 </div>
@@ -288,7 +291,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         High Speed Servers for landing pages
                                                     </div>
                                                 </div>
@@ -296,7 +299,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                         </div>
                                     </div>
                                     <div className="col-span-4 grid items-center border-x border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                        <div className="">
+                                        <div  >
                                             <p className="text-center text-xl font-bold">
                                                 INR 19.5K per annum
                                             </p>
@@ -306,7 +309,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                         </div>
                                     </div>
                                     <div className="col-span-4 grid items-center gap-5 border-e border-b border-gray-400 bg-green-50 p-4 pb-8">
-                                        <div className="">
+                                        <div  >
                                             <p className="text-center text-xl font-bold">
                                                 INR 34.5K per annum
                                             </p>
@@ -333,7 +336,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             </div>
                             <div className="col-span-5 grid h-20 place-content-center border-x border-y border-gray-400 text-lg font-semibold uppercase">
                                 <p className="-mt-5">
-                                    Amount <span className="font-normal"> (Without Taxes)</span>
+                                    Amount <span className="font-normal capitalize"> (Without Taxes)</span>
                                 </p>
                             </div>
                             <div className="col-span-1 grid place-content-center border-s border-b border-gray-400 p-4 pb-8 uppercase">
@@ -350,7 +353,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Keyword hunting & grouping
                                             </div>
                                         </div>
@@ -359,7 +362,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Ad copy writing
                                             </div>
                                         </div>
@@ -368,7 +371,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Landing page design {formInputs.proposalType === "PropGenX"
                                                     ? "(for 1 project)"
                                                     : formInputs.proposalType === "LeadTitanX"
@@ -381,7 +384,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Lead qualifying framework setup
 
                                             </div>
@@ -391,7 +394,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Campaign Setup
 
                                             </div>
@@ -401,7 +404,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
 
                                                 Ads Market Realignment
 
@@ -412,7 +415,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
 
 
                                                 Dashboard + AutoTune
@@ -424,7 +427,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
 
 
 
@@ -447,7 +450,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Up to {formInputs.proposalType === "LeadTitanX" ? "500" : "100"} good intent keywords {formInputs.proposalType === "LeadTitanX" && "per product"}
                                             </div>
                                         </div>
@@ -456,7 +459,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
 
                                                 Landing pages with dynamic
                                                 headings
@@ -467,7 +470,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
 
                                                 First Month’s AI - Market
                                                 Realignment included
@@ -507,7 +510,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Landing pages for each Ad group
                                             </div>
                                         </div>
@@ -516,7 +519,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                 <Bullet />
 
                                             </span>
-                                            <div id="i8id6r" className="">
+                                            <div id="i8id6r"  >
                                                 Setup of lead qualifying questionnaries as per BANT framework
                                             </div>
                                         </div>
@@ -551,7 +554,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Block non-performing Keywords
                                                     </div>
                                                 </div>
@@ -560,7 +563,7 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                                                         <Bullet />
 
                                                     </span>
-                                                    <div id="i8id6r" className="">
+                                                    <div id="i8id6r"  >
                                                         Align search terms to company's keywords
                                                     </div>
                                                 </div>
@@ -580,6 +583,140 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             }
 
 
+
+                        </div>
+                    }
+
+                    {
+                        (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent ESSENTIAL" || formInputs.proposalType === "Agent LIVE") &&
+                        <div className="grid gap-1 grid-cols-12">
+                            <div className="col-span-1 grid h-20 place-content-center  bg-neutral-900 text-white text-lg font-semibold">
+                                <p className="-mt-5">
+                                    SR.
+                                    NO
+                                </p>
+                            </div>
+                            <div className="col-span-8 grid h-20 place-content-center   bg-neutral-900 text-white text-lg font-semibold uppercase">
+                                <p className="-mt-5">Particulars</p>
+                            </div>
+                            <div className="col-span-3 grid h-20 place-content-center border-x border-y border-gray-400 bg-neutral-900 text-white text-lg font-semibold Capitalize text-center">
+                                <p className="-mt-5">
+                                    AMOUNT (Without Taxes)
+                                </p>
+                            </div>
+                            <div className="col-span-1 bg-cyan-50 grid place-content-center  p-4 pb-8 uppercase">
+                                <p className="font-bold">1</p>
+                            </div>
+                            <div className="col-span-8 bg-cyan-50 flex flex-col justify-center p-4 pb-8 ">
+                                <div>
+                                    <p className="mb-1 text-xl font-bold">AI Agent {formInputs.proposalType==="Agent LIVE" ? "Live" : formInputs.proposalType==="Agent PRO" ? "Pro" : "Essentials" }</p>
+                                    <p className="text-lg">Per Agent Role</p>
+                                </div>
+                            </div>
+                            <div className="col-span-3 bg-green-50 grid text-end  p-4 pb-8 ">
+                                <p className="mb-1 text-xl font-bold">INR  
+                                    {formInputs.proposalType==="Agent LIVE" ? " 7.5L" : formInputs.proposalType==="Agent PRO" ? " 6.5L" : " 4.5L" } (for 1 Year)</p>
+                                <p className="text-lg">Per Agent Role</p>
+                                <p className="text-lg"> {formInputs.proposalType==="Agent LIVE" ? "[25LIV101] " : formInputs.proposalType==="Agent PRO" ? "[25PRO101] " : "[25ESS101] " }</p>
+                            </div>
+                            <div className="col-span-1 bg-cyan-50 grid place-content-center  p-4 pb-8 uppercase">
+                                <p className="font-bold">2</p>
+                            </div>
+                            <div className="col-span-8 bg-cyan-50 flex flex-col justify-center p-4 pb-8 ">
+                                <div>
+                                    <p className="mb-1 text-xl font-bold">Talk Time - Voice</p>
+                                    <p className="text-lg">Per Min</p>
+                                    <div id="i0mbks" className="flex gap-3 mt-4">
+                                        <span id="idghz9" className="mt-5">
+                                            <Bullet />
+
+                                        </span>
+                                        <div id="i8id6r"  >
+                                            Per minute talk time charges to be billed monthly from the
+                                            pre paid balance.
+                                        </div>
+                                    </div>
+                                    <div id="i0mbks" className="flex gap-3">
+                                        <span id="idghz9" className="mt-5">
+                                            <Bullet />
+
+                                        </span>
+                                        <div id="i8id6r"  >
+                                            Minimum Top-up Value - INR 21000 at a time.
+
+                                        </div>
+                                    </div>
+                                    <div id="i0mbks" className="flex gap-3">
+                                        <span id="idghz9" className="mt-5">
+                                            <Bullet />
+
+                                        </span>
+                                        <div id="i8id6r"  >
+                                            Minimum Balance to be maintained - INR 100 Only.
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-3 bg-green-50 text-end flex flex-col justify-center  p-4 pb-8 ">
+                                <div>
+
+                                    <p className="mb-1 text-xl font-bold">INR 12 Only</p>
+                                    <p className="text-lg">Per Minute
+                                    </p>
+                                    <p className="text-lg">{formInputs.proposalType==="Agent LIVE" ? "[25LIV102] " : formInputs.proposalType==="Agent PRO" ? "[25PRO102] " : "[25ESS102] " }</p>
+                                </div>
+                            </div>
+                            <div className="col-span-1 bg-cyan-50 grid place-content-center  p-4 pb-8 uppercase">
+                                <p className="font-bold">3</p>
+                            </div>
+                            <div className="col-span-8 bg-cyan-50 flex flex-col justify-center p-4 pb-8 ">
+                                <div>
+                                    <p className="mb-1 text-xl font-bold">Annual Maintenance Charges</p>
+                                    <p className="text-lg">Per Year after first year</p>
+                                    <div id="i0mbks" className="flex gap-3 mt-4">
+                                        <span id="idghz9" className="mt-5">
+                                            <Bullet />
+
+                                        </span>
+                                        <div id="i8id6r"  >
+                                            AI Agent Re-Training and response updating
+
+                                        </div>
+                                    </div>
+                                    <div id="i0mbks" className="flex gap-3">
+                                        <span id="idghz9" className="mt-5">
+                                            <Bullet />
+
+                                        </span>
+                                        <div id="i8id6r"  >
+                                            Tech Stack Maintenance Charges
+
+
+                                        </div>
+                                    </div>
+                                    <div id="i0mbks" className="flex gap-3">
+                                        <span id="idghz9" className="mt-5">
+                                            <Bullet />
+
+                                        </span>
+                                        <div id="i8id6r"  >
+                                            Expert Support for Agent Reconfigurations upto 15 Hrs
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-3 bg-green-50 text-end flex flex-col justify-center  p-4 pb-8 ">
+                                <div>
+
+                                    <p className="mb-1 text-xl font-bold">INR {(formInputs.proposalType==="Agent LIVE" || formInputs.proposalType==="Agent PRO") ? "3L" : "2L" }
+                                    </p>
+                                    <p className="text-lg">Per Year
+                                    </p>
+                                    <p className="text-lg">{formInputs.proposalType==="Agent LIVE" ? "[25LIV103] " : formInputs.proposalType==="Agent PRO" ? "[25PRO103] " : "[25ESS103] " }</p>
+                                </div>
+                            </div>
 
                         </div>
                     }
@@ -612,6 +749,15 @@ const PdfPage4 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                             </p>
                         </div>
                     )}
+                    {
+                        (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent ESSENTIAL" || formInputs.proposalType === "Agent LIVE") &&
+                        <div className="mt-16">
+                            <p className="text-xl font-semibold">Note :</p>
+                            <p className="mt-3">
+                                Telephone, WhatsApp, Email and Dialer Services charges at actuals or Your Cost.
+                            </p>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

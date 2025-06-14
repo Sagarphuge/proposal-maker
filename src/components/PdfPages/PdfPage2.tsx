@@ -9,6 +9,9 @@ const PdfPage2 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
       LeadTitanX: 6,
       HealthGenX: 5,
       LeadGenX: 6,
+      "Agent PRO": 7,
+      "Agent LIVE": 7,
+      "Agent ESSENTIAL": 7
     };
 
     const executionPlanPage = {
@@ -17,6 +20,9 @@ const PdfPage2 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
       LeadTitanX: 9,
       HealthGenX: 8,
       LeadGenX: 9,
+      "Agent PRO": 9,
+      "Agent LIVE": 9,
+      "Agent ESSENTIAL": 9
     };
 
     const termsPage = {
@@ -25,6 +31,9 @@ const PdfPage2 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
       LeadTitanX: 12,
       HealthGenX: 11,
       LeadGenX: 12,
+      "Agent PRO": 13,
+      "Agent LIVE": 13,
+      "Agent ESSENTIAL": 13
     };
 
     const escalationPage = {
@@ -33,6 +42,9 @@ const PdfPage2 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
       LeadGenX: 15,
       LeadTitanX: 15,
       HealthGenX: 14,
+      "Agent PRO": 15,
+      "Agent LIVE": 15,
+      "Agent ESSENTIAL": 15
     };
 
     return (
@@ -92,7 +104,7 @@ const PdfPage2 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>(
                   <div className="h-1 bg-gradient-to-br from-green-500 to-blue-400"></div>
                 </div>
 
-                {["LeadGenX", "LeadTitanX", "PropGenX", "HealthGenX"].includes(formInputs.proposalType) && (
+                {["LeadGenX", "LeadTitanX", "PropGenX", "HealthGenX", "Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && (
                   <div>
                     <div className="mt-4 mb-14 flex justify-between items-center">
                       <p className="text-4xl">Escalation Matrix</p>

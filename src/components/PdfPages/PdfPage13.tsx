@@ -9,7 +9,12 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
     ({ formInputs }, ref) => {
         return <div ref={ref} className="h-[1700px] relative text-xl text-neutral-900">
             <div className="absolute top-6 right-6">
-                {["AdGenX", "PropGenX", "HealthGenX"].includes(formInputs.proposalType) ? 12 : 13}
+         
+                {["AdGenX", "PropGenX", "HealthGenX"].includes(formInputs.proposalType)
+                    ? 12
+                    : ["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType)
+                        ? 14
+                        : 13}
             </div>
             <div className="h-full px-10">
                 <div className="h-full border-s px-10">
@@ -61,12 +66,10 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 <Bullet />
                             </div>
                             <div id="i8id6r" className="">
-                                The client must handover the requested critical information
-                                (DNS update, Logo, verification documents for Google) within
-                                15 days of the onboarding meeting. In case ALL of the critical
-                                information is not handed over during this timeframe, the
-                                project will be considered as closed and the client will not
-                                be eligible to claim any refund.
+                                {
+                                    (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "The client must handover the requested information in prescribed format for the learning of the AI Voice Bot" : "The client must handover the requested critical information (DNS update, Logo, verification documents for Google) within 15 days of the onboarding meeting. In case ALL of the critical information is not handed over during this timeframe, the project will be considered as closed and the client will not be eligible to claim any refund."
+                                }
+
                             </div>
                         </div>
                         <div className="flex gap-3">
@@ -86,18 +89,21 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 change at any time at the discretion of Inaiways.
                             </div>
                         </div>
-                        <div className="flex gap-3">
-                            <div className="mt-5">
-                                <Bullet />
+                        {
+                            (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") ? "" : <div className="flex gap-3">
+                                <div className="mt-5">
+                                    <Bullet />
+                                </div>
+                                <div>
+                                    Validity of {formInputs.proposalType === "AdGenX" ? "AI Optimisation" : "AI - Market Realignment"} & expert support is for 90
+                                    consecutive days starting from date of payment for that support.
+                                </div>
                             </div>
-                            <div>
-                                Validity of {formInputs.proposalType === "AdGenX" ? "AI Optimisation" : "AI - Market Realignment"} & expert support is for 90
-                                consecutive days starting from date of payment for that support.
-                            </div>
-                        </div>
+                        }
+
 
                         {
-                            ["AdGenX", "LeadGenX", "PropGenX", "HealthGenX","LeadTitanX"].includes(formInputs.proposalType) && <div className="flex gap-3">
+                            ["AdGenX", "LeadGenX", "PropGenX", "HealthGenX", "LeadTitanX"].includes(formInputs.proposalType) && <div className="flex gap-3">
                                 <div className="mt-5">
                                     <Bullet />
                                 </div>
@@ -107,7 +113,7 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                             </div>
                         }
-                        {["AdGenX", "LeadGenX", "PropGenX", "HealthGenX","LeadTitanX"].includes(formInputs.proposalType) && <div className="flex gap-3">
+                        {["AdGenX", "LeadGenX", "PropGenX", "HealthGenX", "LeadTitanX"].includes(formInputs.proposalType) && <div className="flex gap-3">
                             <div className="mt-5">
                                 <Bullet />
                             </div>
@@ -122,6 +128,16 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                     </div>
                     <div className="mt-10 grid gap-1">
                         <p className="text-xl font-bold">Delivery Terms :</p>
+                        {
+                            (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent LIVE" || formInputs.proposalType === "Agent ESSENTIAL") && ["Quality Assurance: The effectiveness of AI-generated responses depends on accurate data and training materials provided by the client. Inaiways is not responsible for inaccurate outcomes due to insufficient client input.", " AI Performance: AI Agents rely on NLP models and data provided for training. Their responses may varybased on training data provided.", "Refer to https://www.inaiways.com/v/terms-conditions-enterprises for more details.", "SLA(Service Level Agreement) : Inaiways commits to an uptime of 96%, with support available for critical issues within 48 hours."].map((text, index) => (
+                                <div key={index} className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>{text}</div>
+                                </div>
+                            ))
+                        }
                         {formInputs.proposalType === "LeadGenX" &&
                             [
                                 "In case, the Ad campaign setup is not done properly and the customer wants to update the Ad campaign setup (before starting the Ads), only one (1) FREE change request will be considered.",
@@ -134,7 +150,6 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                     <div>{text}</div>
                                 </div>
                             ))}
-
                         {formInputs.proposalType === "AdGenX" && (
                             <div className="flex gap-3">
                                 <div className="mt-5">
@@ -175,8 +190,8 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                 </div>
                             ))}
                     </div>
-                    {
-                        formInputs.proposalType !== "AdGenX" && <>
+                    {!["AdGenX", "Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && (
+                        <>
                             <div className="mt-10 grid gap-1">
                                 <p className="text-xl font-bold">
                                     Google Ads Policy Compliance and Responsibility :
@@ -198,7 +213,6 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                         </div>
                                         <div>
                                             Refer to{" "}
-
                                             https://www.inaiways.com/v/terms-conditions-leadgenx-with-lp
                                             for more details.
                                         </div>
@@ -212,7 +226,6 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                         </div>
                                         <div>
                                             For more details refer to{" "}
-
                                             https://www.inaiways.com/v/terms-and-conditions-leadgenx-without-landing-pages
                                         </div>
                                     </div>
@@ -225,7 +238,6 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                         </div>
                                         <div>
                                             Refer to{" "}
-
                                             https://www.inaiways.com/v/terms-conditions-enterprises
                                             for more details.
                                         </div>
@@ -239,11 +251,119 @@ const PdfPage13 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                                         </div>
                                         <div>
                                             For more details refer to{" "}
-
                                             https://www.inaiways.com/v/terms-conditions-direct-promoters
                                         </div>
                                     </div>
                                 )}
+                            </div>
+                        </>
+                    )}
+                    {
+                        (formInputs.proposalType === "Agent PRO" || formInputs.proposalType === "Agent ESSENTIAL" || formInputs.proposalType === "Agent LIVE") && <>
+                            <div className="mt-10 grid gap-1">
+                                <p className="text-xl font-bold">
+                                    Usage and Limits:
+                                </p>
+
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+                                        Call Time: Maximum 30 minutes per session.
+                                    </div>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+                                        Data Transfer: Limited to 2 GB per month.
+                                    </div>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+
+                                        Concurrency: Up to 15 simultaneous connections.
+                                    </div>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+
+
+                                        Training Data: Text-based only, maximum size of 50 MB.
+                                    </div>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+
+
+
+                                        Training Data Changes Limits: You can change the training data maximum 3 times during training period.
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="mt-10 grid gap-1">
+                                <p className="text-xl font-bold">
+                                    Integration & Support
+                                </p>
+
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+                                        Third-Party Integrations: AI VoiceBot can integrate with CRMs, databases, and APIs as per the client's
+                                        request. Custom integrations may require additional costs.
+                                    </div>
+                                </div>
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+                                        Support & Maintenance: Post-deployment support includes bug fixes and minor refinements. Major
+                                        updates or feature additions will be charged separately.
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div className="mt-10 grid gap-1">
+                                <p className="text-xl font-bold">
+                                    General Terms
+                                </p>
+
+                                <div className="flex gap-3">
+                                    <div className="mt-5">
+                                        <Bullet />
+                                    </div>
+                                    <div>
+
+                                        Government regulations, local authority regulations, and platform policies supersede any features in the
+                                        product and service
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </>
                     }

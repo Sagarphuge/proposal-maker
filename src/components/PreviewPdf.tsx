@@ -22,6 +22,10 @@ import PdfPage13 from "../components/PdfPages/PdfPage13";
 import PdfPage14 from "../components/PdfPages/PdfPage14";
 import PdfPage15 from "../components/PdfPages/PdfPage15";
 import PdfPage16 from "../components/PdfPages/PdfPage16";
+import PdfPage17 from "./PdfPages/PdfPage17";
+import PdfPage18 from "./PdfPages/PdfPage18";
+import PdfPage19 from "./PdfPages/PdfPage19";
+import PdfPage20 from "./PdfPages/PdfPage20";
 
 const PreviewPDF = ({ reset }: { reset: () => void }) => {
     const { setPreviewModal, formInputs, setProposalsList, setIsFromTable, proposalsList, isFromTable } = useStore()
@@ -39,6 +43,10 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
         }
     }
     const pdfRefs = [
+        useRef(null),
+        useRef(null),
+        useRef(null),
+        useRef(null),
         useRef(null),
         useRef(null),
         useRef(null),
@@ -94,6 +102,7 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
     }
 
 
+
     return (
         <>
             <div className="fixed inset-0 flex items-center justify-center bg-black/60">
@@ -126,27 +135,49 @@ const PreviewPDF = ({ reset }: { reset: () => void }) => {
                         <PdfPage2 formInputs={formInputs} ref={pdfRefs[1]} />
                         <PdfPage3 formInputs={formInputs} ref={pdfRefs[2]} />
                         <PdfPage4 formInputs={formInputs} ref={pdfRefs[3]} />
-                        {!["HealthGenX", "PropGenX"].includes(formInputs.proposalType) && (
-                            <PdfPage5 formInputs={formInputs} ref={pdfRefs[4]} />
-                        )
+                        {
+                            !["PropGenX", "HealthGenX", "Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && (
+                                <PdfPage5 formInputs={formInputs} ref={pdfRefs[4]} />
+                            )
+                        }{
+                            ["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && <PdfPage17 formInputs={formInputs} ref={pdfRefs[5]} />
                         }
-                        <PdfPage6 formInputs={formInputs} ref={pdfRefs[5]} />
-                        <PdfPage7 formInputs={formInputs} ref={pdfRefs[6]} />
-                        <PdfPage8 formInputs={formInputs} ref={pdfRefs[7]} />
-                        <PdfPage9 formInputs={formInputs} ref={pdfRefs[8]} />
+                        {
+                            !["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) &&
+                            <PdfPage6 formInputs={formInputs} ref={pdfRefs[6]} />
+                        }
+                        {
+                            ["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && <PdfPage18 formInputs={formInputs} ref={pdfRefs[7]} />
+                        }
+                        <PdfPage7 formInputs={formInputs} ref={pdfRefs[8]} />
+                        {
+                            !["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) &&
+                            <PdfPage8 formInputs={formInputs} ref={pdfRefs[9]} />
+                        }
+                        {
+                            ["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && <PdfPage19 formInputs={formInputs} ref={pdfRefs[10]} />
+                        }
+                        <PdfPage9 formInputs={formInputs} ref={pdfRefs[11]} />
                         {
                             formInputs.proposalType !== "AdGenX" &&
-                            <PdfPage10 formInputs={formInputs} ref={pdfRefs[9]} />
+                            <PdfPage10 formInputs={formInputs} ref={pdfRefs[12]} />
                         }
-                        <PdfPage11 formInputs={formInputs} ref={pdfRefs[10]} />
-                        <PdfPage12 formInputs={formInputs} ref={pdfRefs[11]} />
-                        <PdfPage13 formInputs={formInputs} ref={pdfRefs[12]} />
-                        <PdfPage16 formInputs={formInputs} ref={pdfRefs[13]} />
+                        <PdfPage11 formInputs={formInputs} ref={pdfRefs[13]} />
+                        {
+                            ["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) &&
+                            <PdfPage20 formInputs={formInputs} ref={pdfRefs[14]} />
+                        }
+                        <PdfPage12 formInputs={formInputs} ref={pdfRefs[15]} />
+
+                        <PdfPage13 formInputs={formInputs} ref={pdfRefs[16]} />
+                        {
+                            !["Agent PRO", "Agent LIVE", "Agent ESSENTIAL"].includes(formInputs.proposalType) && <PdfPage16 formInputs={formInputs} ref={pdfRefs[17]} />
+                        }
                         {
                             formInputs.proposalType !== "AdGenX" &&
-                            <PdfPage14 formInputs={formInputs} ref={pdfRefs[14]} />
+                            <PdfPage14 formInputs={formInputs} ref={pdfRefs[18]} />
                         }
-                        <PdfPage15 formInputs={formInputs} ref={pdfRefs[15]} />
+                        <PdfPage15 formInputs={formInputs} ref={pdfRefs[19]} />
                     </div>
 
                     <div className="p-4 flex items-center gap-2.5 justify-between">

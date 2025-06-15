@@ -34,7 +34,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         <div className="col-span-1 grid h-16 place-content-center   bg-neutral-900 text-white text-lg font-semibold uppercase">
                             <p className="-mt-5">LIVE</p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Answers Common Questions Instantly:
                             </p>
                             <p className="text-lg">Trained on FAQ's, Collateral, Pricing Details shared by customers.
@@ -54,14 +54,14 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Instant Call Summaries:
                             </p>
                         </div>
                         <div className="col-span-2"></div>
                         <div className="col-span-1"></div>
                         <div className="col-span-1"></div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Sends call summaries on Slack, WhatsApp, Email Only
                             </p>
                         </div>
@@ -77,7 +77,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className=" text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Send call summaries on Known Tools
                             </p>
                         </div>
@@ -93,7 +93,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Send call summaries on Custom Application (Additional Cost
                                 Applicable)
 
@@ -111,7 +111,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Guided Conversations:
                             </p>
                             <p className="text-lg">
@@ -131,7 +131,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Collect Data from Customer:
                             </p>
                             <p className="text-lg">
@@ -155,7 +155,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Handles Incoming Calls:
                             </p>
                             <p className="text-lg">
@@ -177,7 +177,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Remembers Past Conversations:
 
                             </p>
@@ -185,7 +185,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         <div className="col-span-2"></div>
                         <div className="col-span-1"></div>
                         <div className="col-span-1"></div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Maintain Conversation History in Known Tools
                             </p>
                         </div>
@@ -201,7 +201,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Maintain Conversation History in Custom Application
                                 (Additional Cost Applicable)
 
@@ -219,13 +219,13 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Looks Up Data When Needed                            </p>
                         </div>
                         <div className="col-span-2"></div>
                         <div className="col-span-1"></div>
                         <div className="col-span-1"></div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Fetch Data from Known Tools
                             </p>
                         </div>
@@ -241,7 +241,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Fetch Data from Custom Application (Additional Cost Applicable)
                             </p>
                         </div>
@@ -259,14 +259,14 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="font-bold text-lg">Language Support
                             </p>
                         </div>
                         <div className="col-span-2"></div>
                         <div className="col-span-1"></div>
                         <div className="col-span-1"></div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">English Only
                             </p>
                         </div>
@@ -283,7 +283,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p className="text-lg">Yes
                             </p>
                         </div>
-                        <div className="col-span-8 bg-cyan-50 pb-8 grid   ps-3">
+                        <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
                             <p className="text-lg">Supported Languages (Multiple Languages- Max 3 Per Agent)
                             </p>
                         </div>

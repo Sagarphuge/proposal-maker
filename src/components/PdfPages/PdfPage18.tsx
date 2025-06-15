@@ -40,7 +40,7 @@ const PdfPage18 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <div className="col-span-7   bg-cyan-50  ps-3 pt-5 pb-8">
                                 <p className="font-bold text-xl">        Expert Support/ Development Customisation
                                 </p>
-                                <p className="text-lg -mt-4">
+                                <p className="text-lg ">
                                     Expert Support required for any additional changes after one year and hrs over an above included in AMC
                                 </p>
                             </div>
@@ -49,7 +49,7 @@ const PdfPage18 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
 
                                     <p className="font-bold text-xl"> INR 5.5K Per Hr
                                     </p>
-                                    <p className="-mt-4">{formInputs.proposalType === "Agent LIVE" ? "[25LIV104] " : formInputs.proposalType === "Agent PRO" ? "[25PRO104] " : "[25ESS104] "}
+                                    <p className="">{formInputs.proposalType === "Agent LIVE" ? "[25LIV104] " : formInputs.proposalType === "Agent PRO" ? "[25PRO104] " : "[25ESS104] "}
                                     </p>
                                 </div>
                             </div>

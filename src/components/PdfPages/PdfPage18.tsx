@@ -32,19 +32,19 @@ const PdfPage18 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <div className="col-span-4 grid h-16 place-content-center   bg-neutral-900 text-white text-lg font-semibold ">
                                 <p className="-mt-5">AMOUNT (Without Taxes)</p>
                             </div>
-                            <div className="col-span-1  place-content-center bg-cyan-50 text-center ps-2 pt-5 pb-8">
+                            <div className="col-span-1  place-content-center bg-cyan-50 text-center ps-2 pt-4 pb-8">
                                 <p className="-mt-5">
                                     1
                                 </p>
                             </div>
-                            <div className="col-span-7   bg-cyan-50  ps-3 pt-5 pb-8">
+                            <div className="col-span-7   bg-cyan-50  ps-3 pt-4 pb-8">
                                 <p className="font-bold text-xl">        Expert Support/ Development Customisation
                                 </p>
                                 <p className="text-lg ">
                                     Expert Support required for any additional changes after one year and hrs over an above included in AMC
                                 </p>
                             </div>
-                            <div className="col-span-4 text-center grid place-content-center bg-green-50 pt-5 pb-8  ps-3 ">
+                            <div className="col-span-4 text-center grid place-content-center bg-green-50 pt-4 pb-8  ps-3 ">
                                 <div className="text-center">
 
                                     <p className="font-bold text-xl"> INR 5.5K Per Hr

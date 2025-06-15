@@ -12,7 +12,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                 <div className="pt-8">
                     <Logo />
                 </div>
-                <div className="relative mt-18 mb-14">
+                <div className="relative mt-8 mb-14">
                     <div className="absolute top-2 -left-12 h-36 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
                     <p className="text-3xl">Escalation</p>
                     <p className="text-7xl font-black">Escalation Matrix</p>

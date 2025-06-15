@@ -9,10 +9,10 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
         <div className="absolute top-6 right-6">{(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") ? 14 : 15}</div>
         <div className="h-full px-10">
             <div className="h-full border-s ps-12">
-                <div className="pt-10">
+                <div className="pt-8">
                     <Logo />
                 </div>
-                <div className="relative mt-8 mb-12">
+                <div className="relative mt-18 mb-14">
                     <div className="absolute top-2 -left-12 h-36 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
                     <p className="text-3xl">Escalation</p>
                     <p className="text-7xl font-black">Escalation Matrix</p>
@@ -45,7 +45,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9272091303</p>
                         </div>
                     </div>
-                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-5 pb-12">
+                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-4 pb-10">
                         <p>
                             1. In case of any issues or concerns regarding the current
                             status, issue or concern the first point of contact is the
@@ -80,7 +80,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9860282807</p>
                         </div>
                     </div>
-                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-5 pb-12">
+                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-4 pb-10">
                         <p>
                             1. If the issue remains unresolved or if there is
                             dissatisfaction with the response at Level 1, the escalation
@@ -114,7 +114,7 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             <p>+91-9579074365</p>
                         </div>
                     </div>
-                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-5 pb-12">
+                    <div className="col-span-6 gap-2 grid border-e border-b border-gray-400 p-4 pb-10">
                         <p>
                             1. If the issue persists despite escalations at Levels 1 and 2,
                             or if there is dissatisfaction with the responses received, the

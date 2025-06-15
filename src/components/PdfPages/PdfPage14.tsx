@@ -9,10 +9,10 @@ const PdfPage14 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
         <div className="absolute top-6 right-6">{(formInputs.proposalType === "PropGenX" || formInputs.proposalType === "HealthGenX") ? 14 : 15}</div>
         <div className="h-full px-10">
             <div className="h-full border-s ps-12">
-                <div className="pt-8">
+                <div className="pt-10">
                     <Logo />
                 </div>
-                <div className="relative mt-8 mb-14">
+                <div className="relative mt-8 mb-16">
                     <div className="absolute top-2 -left-12 h-36 w-3 bg-gradient-to-br from-green-500 to-blue-400"></div>
                     <p className="text-3xl">Escalation</p>
                     <p className="text-7xl font-black">Escalation Matrix</p>

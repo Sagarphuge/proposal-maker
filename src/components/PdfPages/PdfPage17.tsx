@@ -43,15 +43,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -66,7 +66,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50   text-center  place-content-center ps-3 ">
@@ -82,7 +82,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2  place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1  place-content-center bg-green-50 text-center ps-3 ">
@@ -90,7 +90,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-1  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -100,15 +100,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2  place-content-center  text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1   place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -120,7 +120,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1  place-content-center bg-green-50 text-center ps-3 ">
@@ -128,7 +128,7 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-1  place-content-center bg-green-50 text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -144,15 +144,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -166,15 +166,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -190,15 +190,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2 place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -208,15 +208,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2 place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -230,15 +230,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2 place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1 place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -247,16 +247,16 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         </div>
 
                         <div className="col-span-2 place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1 place-content-center text-center ps-3 ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
 
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -272,15 +272,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                         </div>
 
                         <div className="col-span-2 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-8 bg-cyan-50 pb-5 grid   ps-3">
@@ -288,15 +288,15 @@ const PdfPage17 = React.forwardRef<HTMLDivElement, { formInputs: ProposalType }>
                             </p>
                         </div>
                         <div className="col-span-2    place-content-center text-center ps-3  ">
-                            <p className="text-lg">No
+                            <p className="text-lg -mt-3">No
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                         <div className="col-span-1 bg-green-50  place-content-center text-center ps-3 ">
-                            <p className="text-lg">Yes
+                            <p className="text-lg -mt-3">Yes
                             </p>
                         </div>
                     </div>
